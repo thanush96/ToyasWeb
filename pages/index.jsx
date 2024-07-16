@@ -10,10 +10,11 @@ import HomeDefaultTopCategories from '~/components/partials/homepage/home-defaul
 import HomeDefaultProductListing from '~/components/partials/homepage/home-default/HomeDefaultProductListing';
 import HomeDefaultBanner from '~/components/partials/homepage/home-default/HomeDefaultBanner';
 import PageContainer from '~/components/layouts/PageContainer';
+import HeaderMobile from '~/components/shared/headers/HeaderMobile';
 
 const HomepageDefaultPage = () => {
     return (
-        <PageContainer title="Multipurpose Marketplace React Ecommerce Template">
+        <PageContainer title="">
             <main id="homepage-1">
                 <HomeDefaultBanner />
                 <SiteFeatures />

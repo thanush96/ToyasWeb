@@ -34,7 +34,14 @@ const Menu = ({ source, className }) => {
             </li>
         );
     }
-    return <ul className={className}>{menuView}</ul>;
+    return (
+        <div>
+            <h5>
+                Top Categories <i className="fa fa-caret-up"></i>
+            </h5>
+            <ul className={className}>{menuView}</ul>
+        </div>
+    );
 };
 
 export default Menu;

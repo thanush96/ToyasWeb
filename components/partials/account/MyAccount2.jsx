@@ -136,10 +136,10 @@ class MyAccount extends Component {
                                         <i className="icon-clipboard-check"></i>
                                         <span>TRACK YOUR ORDERS EASILY</span>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <i className="icon-bag2"></i>
                                         <span>KEEP A RECORD OF ALL YOUR PURCHASES</span>
-                                    </li>
+                                    </li> */}
                                 </ul>
                             </figure>
                             <div className="ps-section__coupon">

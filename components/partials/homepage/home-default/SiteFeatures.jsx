@@ -9,8 +9,8 @@ const SiteFeatures = () => (
                         <i className="icon-rocket"></i>
                     </div>
                     <div className="ps-block__right">
-                        <h4>Free Delivery</h4>
-                        <p>For all oders over $99</p>
+                        <h4>FASTED DELIVERY</h4>
+                        <p>Delivery in 24/H</p>
                     </div>
                 </div>
                 <div className="ps-block__item">
@@ -18,8 +18,8 @@ const SiteFeatures = () => (
                         <i className="icon-sync"></i>
                     </div>
                     <div className="ps-block__right">
-                        <h4>90 Days Return</h4>
-                        <p>If goods have problems</p>
+                        <h4>24H RETURN</h4>
+                        <p>100% money-back</p>
                     </div>
                 </div>
                 <div className="ps-block__item">
@@ -27,8 +27,8 @@ const SiteFeatures = () => (
                         <i className="icon-credit-card"></i>
                     </div>
                     <div className="ps-block__right">
-                        <h4>Secure Payment</h4>
-                        <p>100% secure payment</p>
+                        <h4>SECURE PAYMENT</h4>
+                        <p>Your money is safe</p>
                     </div>
                 </div>
                 <div className="ps-block__item">
@@ -37,10 +37,10 @@ const SiteFeatures = () => (
                     </div>
                     <div className="ps-block__right">
                         <h4>24/7 Support</h4>
-                        <p>Dedicated support</p>
+                        <p>Live contact/message</p>
                     </div>
                 </div>
-                <div className="ps-block__item">
+                {/* <div className="ps-block__item">
                     <div className="ps-block__left">
                         <i className="icon-gift"></i>
                     </div>
@@ -48,7 +48,7 @@ const SiteFeatures = () => (
                         <h4>Gift Service</h4>
                         <p>Support gift service</p>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     </div>

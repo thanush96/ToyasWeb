@@ -275,15 +275,16 @@
             }
         ]
     },
+
     "product_categories": [
         {
             "icon": "icon-star",
-            "text": "Hot Promotions",
+            "text": "Dolls",
             "url": "/shop"
         },
         {
             "icon": "icon-laundry",
-            "text": "Consumer Electronic",
+            "text": "Educational Toy",
             "url": "/shop",
             "extraClass": "menu-item-has-children has-mega-menu",
             "subClass": "sub-menu",
@@ -346,28 +347,28 @@
             ]
         },
         {
-            "icon": "icon-shirt",
-            "text": "Clothing & Apparel",
+            "icon": "icon-star",
+            "text": "Games and puzzle",
             "url": "/shop"
         },
         {
-            "icon": "icon-lampshade",
-            "text": "Home, Garden & Kitchen",
+            "icon": "icon-star",
+            "text": "Indoor Play",
             "url": "/shop"
         },
         {
             "icon": "icon-heart-pulse",
-            "text": "Health & Beauty",
+            "text": "Kids Books",
             "url": "/shop"
         },
         {
             "icon": "icon-diamond2",
-            "text": "Yewelry & Watches",
+            "text": "Outdoor Toy",
             "url": "/shop"
         },
         {
             "icon": "icon-desktop",
-            "text": "Computer & Technology",
+            "text": "Rockers & Rides",
             "url": "/shop",
             "extraClass": "menu-item-has-children has-mega-menu",
             "subClass": "sub-menu",
@@ -417,12 +418,12 @@
         },
         {
             "icon": "icon-baby-bottle",
-            "text": "Babies & Moms",
+            "text": "Toy Figure",
             "url": "/shop"
         },
         {
-            "icon": "icon-baseball",
-            "text": "Sport & Outdoor",
+            "icon": "icon-baby-bottle",
+            "text": "Vehicles TOYS",
             "url": "/shop"
         }
     ]
