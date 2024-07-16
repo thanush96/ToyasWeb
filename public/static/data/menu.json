@@ -424,31 +424,6 @@
             "icon": "icon-baseball",
             "text": "Sport & Outdoor",
             "url": "/shop"
-        },
-        {
-            "icon": "icon-smartphone",
-            "text": "Phones & Accessories",
-            "url": "/shop"
-        },
-        {
-            "icon": "icon-book2",
-            "text": "Books & Office",
-            "url": "/shop"
-        },
-        {
-            "icon": "icon-car-siren",
-            "text": "Cars & Motocycles",
-            "url": "/shop"
-        },
-        {
-            "icon": "icon-wrench",
-            "text": "Home Improments",
-            "url": "/shop"
-        },
-        {
-            "icon": "icon-tag",
-            "text": "Vouchers & Services",
-            "url": "/shop"
         }
     ]
 }

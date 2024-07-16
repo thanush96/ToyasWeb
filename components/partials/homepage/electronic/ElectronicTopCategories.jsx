@@ -58,7 +58,7 @@ class ElectronicTopCategories extends Component {
         return (
             <div className="ps-top-categories">
                 <div className="container">
-                    <h3>Top categories of the month</h3>
+                    <h3>Top categories of the month 1</h3>
                     <div className="row">
                         {homeCategories.map(category => (
                             <div className="col-md-4 col-sm-6 col-12 " key={category.title}>

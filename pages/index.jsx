@@ -17,9 +17,9 @@ const HomepageDefaultPage = () => {
             <main id="homepage-1">
                 <HomeDefaultBanner />
                 <SiteFeatures />
+                <HomeDefaultTopCategories />
                 <HomeDefaultDealOfDay collectionSlug="deal-of-the-day" />
                 <HomeAdsColumns />
-                <HomeDefaultTopCategories />
                 <HomeDefaultProductListing
                     collectionSlug="consumer-electronics"
                     title="Consumer Electronics"
