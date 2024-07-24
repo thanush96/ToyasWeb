@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Slider from 'react-slick';
 import SkeletonProduct from '~/components/elements/skeletons/SkeletonProduct';
 import { carouselFullwidth } from '~/utilities/carousel-helpers';
-import CountDownSimple from '~/components/elements/CountDownSimple';
 import ProductDealOfDay from '~/components/elements/products/ProductDealOfDay';
 import { generateTempArray } from '~/utilities/common-helpers';
 import useGetProducts from '~/hooks/useGetProducts';
@@ -36,33 +35,11 @@ const HomeDefaultDealOfDay = ({ collectionSlug }) => {
                 <SkeletonProduct />
             </div>
         ));
-        productItemsView = <div className="row">{skeletons}</div>;
-    }
+     }
 
     return (
-        <div className="ps-deal-of-day">
-            <div className="ps-container">
-                <div className="ps-section__header">
-                    <div className="ps-block--countdown-deal">
-                        <div className="ps-block__left">
-                            <h3>Deal of the day</h3>
-                        </div>
-                        <div className="ps-block__right">
-                            <figure>
-                                <figcaption>End in:</figcaption>
-                                <CountDownSimple
-                                    timeTillDate="12 31 2021, 6:00 am"
-                                    timeFormat="MM DD YYYY, h:mm a"
-                                />
-                            </figure>
-                        </div>
-                    </div>
-                    <Link href="/shop">
-                        <a>View all</a>
-                    </Link>
-                </div>
-                <div className="ps-section__content">{productItemsView}</div>
-            </div>
+        <div className="ps-container">
+            <div className="ps-section__content">{productItemsView}</div>
         </div>
     );
 };

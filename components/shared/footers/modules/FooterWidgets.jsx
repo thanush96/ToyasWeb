@@ -4,115 +4,150 @@ import Link from 'next/link';
 const FooterWidgets = () => (
     <div className="ps-footer__widgets">
         <aside className="widget widget_footer widget_contact-us">
-            <h4 className="widget-title">Contact us</h4>
-            <div className="widget_content">
-                <p>Call us 24/7</p>
-                <h3>1800 97 97 69</h3>
-                <p>
-                    502 New Design Str, Melbourne, Australia <br />
-                    <a href="mailto:contact@Martfury .co">contact@Martfury .co</a>
-                </p>
-                <ul className="ps-list--social">
-                    <li>
-                        <a className="facebook" href="#">
-                            <i className="fa fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a className="twitter" href="#">
-                            <i className="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a className="google-plus" href="#">
-                            <i className="fa fa-google-plus"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a className="instagram" href="#">
-                            <i className="fa fa-instagram"></i>
-                        </a>
-                    </li>
-                </ul>
+            <div className="logo">
+                <img src="/static/img/categories/images/m1.png" alt="Logo" />
             </div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur. Idfames there are many vulputate eget dolor.
+            </p>
+            <ul className="contact-info">
+                <li>
+                    <i className="fa fa-map-marker"></i>
+                    <span>6391 sample address, address</span>
+                </li>
+                <li>
+                    <i className="fa fa-phone"></i>
+                    <span>+000-1234-456 789</span>
+                </li>
+                <li>
+                    <i className="fa fa-envelope"></i>
+                    <span>Toystore@gmail.com</span>
+                </li>
+            </ul>
+            <ul className="ps-list--social">
+                <li>
+                    <a className="facebook" href="#">
+                        <i className="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a className="twitter" href="#">
+                        <i className="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a className="instagram" href="#">
+                        <i className="fa fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a className="youtube" href="#">
+                        <i className="fa fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
         </aside>
         <aside className="widget widget_footer">
-            <h4 className="widget-title">Quick links</h4>
+            <h4 className="widget-title">Account</h4>
             <ul className="ps-list--link">
                 <li>
-                    <Link href="/page/blank">
-                        <a>Policy</a>
-                    </Link>
-                </li>
-
-                <li>
-                    <Link href="/page/blank">
-                        <a>Term & Condition</a>
+                    <Link href="/page/my-account">
+                        <a>My Account</a>
                     </Link>
                 </li>
                 <li>
-                    <Link href="/page/blank">
-                        <a>Shipping</a>
+                    <Link href="/page/order-history">
+                        <a>Order History</a>
                     </Link>
                 </li>
                 <li>
-                    <Link href="/page/blank">
-                        <a>Return</a>
+                    <Link href="/page/addresses">
+                        <a>Addresses</a>
                     </Link>
                 </li>
                 <li>
-                    <Link href="/page/faqs">
-                        <a>FAQs</a>
+                    <Link href="/page/downloads">
+                        <a>Downloads</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/page/account-details">
+                        <a>Account Details</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/page/login-register">
+                        <a>Login Register</a>
                     </Link>
                 </li>
             </ul>
         </aside>
         <aside className="widget widget_footer">
-            <h4 className="widget-title">Company</h4>
+            <h4 className="widget-title">Pages</h4>
             <ul className="ps-list--link">
                 <li>
-                    <Link href="/page/about-us">
-                        <a>About Us</a>
+                    <Link href="/page/who-we-are">
+                        <a>Who we are</a>
                     </Link>
                 </li>
                 <li>
-                    <Link href="/page/blank">
-                        <a>Affilate</a>
+                    <Link href="/page/products">
+                        <a>Products</a>
                     </Link>
                 </li>
                 <li>
-                    <Link href="/page/blank">
-                        <a>Career</a>
+                    <Link href="/page/need-help">
+                        <a>Need Help</a>
                     </Link>
                 </li>
+                <li>
+                    <Link href="/page/service-areas">
+                        <a>Service Areas</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/page/service-faqs">
+                        <a>Service FAQs</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/page/contact-information">
+                        <a>Contact Information</a>
+                    </Link>
+                </li>
+            </ul>
+        </aside>
+        <aside className="widget widget_footer">
+            <h4 className="widget-title">Customer Support</h4>
+            <ul className="ps-list--link">
                 <li>
                     <Link href="/page/contact-us">
-                        <a>Contact</a>
-                    </Link>
-                </li>
-            </ul>
-        </aside>
-        <aside className="widget widget_footer">
-            <h4 className="widget-title">Bussiness</h4>
-            <ul className="ps-list--link">
-                <li>
-                    <Link href="/page/about-us">
-                        <a>Our Press</a>
+                        <a>Contact Us</a>
                     </Link>
                 </li>
                 <li>
-                    <Link href="/account/checkout">
-                        <a>Checkout</a>
+                    <Link href="/page/store-list">
+                        <a>Store List</a>
                     </Link>
                 </li>
                 <li>
-                    <Link href="/account/user-information">
-                        <a>My account</a>
+                    <Link href="/page/opening-hours">
+                        <a>Opening Hours</a>
                     </Link>
                 </li>
                 <li>
-                    <Link href="/shop">
-                        <a>Shop</a>
+                    <Link href="/page/returns-exchanges">
+                        <a>Returns & Exchanges</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/page/refund-and-returns">
+                        <a>Refund and Returns</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/page/privacy-policy">
+                        <a>Privacy Policy</a>
                     </Link>
                 </li>
             </ul>

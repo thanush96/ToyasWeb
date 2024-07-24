@@ -1,30 +1,27 @@
 import React from 'react';
+import Image from 'next/image';  
 
 const Newsletters = ({ layout }) => (
     <section className="ps-newsletter">
-        <div className={layout && layout === 'container' ? ' container' : 'ps-container'}>
-            <form className="ps-form--newsletter" action="do_action" method="post">
-                <div className="row">
-                    <div className="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-12 ">
-                        <div className="ps-form__left">
-                            <h3>Newsletter</h3>
-                            <p>Subcribe to get information about products and coupons</p>
-                        </div>
-                    </div>
-                    <div className="col-xl-7 col-lg-12 col-md-12 col-sm-12 col-12 ">
-                        <div className="ps-form__right">
-                            <div className="form-group--nest">
-                                <input
-                                    className="form-control"
-                                    type="email"
-                                    placeholder="Email address"
-                                />
-                                <button className="ps-btn">Subscribe</button>
-                            </div>
-                        </div>
-                    </div>
+        <div className={layout && layout === 'container' ? 'container' : 'ps-container'}>
+            <div className="newsletter-content">
+                <div className="newsletter-image">
+                    <Image src="/static/img/categories/images/m1.png" alt="Newsletter Background" layout="fill" objectFit="cover" />
                 </div>
-            </form>
+                <div className="newsletter-text">
+                    <h3>Subscribe our newsletter to get latest news.</h3>
+                </div>
+                <form className="ps-form--newsletter" action="do_action" method="post">
+                    <div className="form-group--nest">
+                        <input
+                            className="form-control"
+                            type="email"
+                            placeholder="Your Email Address"
+                        />
+                        <button className="ps-btn">Subscribe Now!</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 );

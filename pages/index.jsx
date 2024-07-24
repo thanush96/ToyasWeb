@@ -11,7 +11,15 @@ import HomeDefaultProductListing from '~/components/partials/homepage/home-defau
 import HomeDefaultBanner from '~/components/partials/homepage/home-default/HomeDefaultBanner';
 import PageContainer from '~/components/layouts/PageContainer';
 import HeaderMobile from '~/components/shared/headers/HeaderMobile';
-
+import ShopByCharacter from '~/components/elements/skeletons/shop-by-character';
+import FeaturedProducts from '~/components/elements/skeletons/FeaturedProducts';
+import ToyStore from '~/components/elements/skeletons/ToyStore'; 
+import ProductCarousel from '~/components/elements/skeletons/ProductCarousel';
+import ShopByAge from '~/components/elements/skeletons/ShopByAge';
+import PopularBrand from '~/components/elements/skeletons/PopularBrand';
+import Banner from '~/components/elements/skeletons/Banner';
+import LatestNews from '~/components/elements/skeletons/LatestNews';
+ 
 const HomepageDefaultPage = () => {
     return (
         <PageContainer title="">
@@ -22,21 +30,19 @@ const HomepageDefaultPage = () => {
                 <HomeDefaultDealOfDay collectionSlug="deal-of-the-day" />
                 <HomeAdsColumns />
                 <HomeDefaultProductListing
-                    collectionSlug="consumer-electronics"
-                    title="Consumer Electronics"
-                />
-                <HomeDefaultProductListing
-                    collectionSlug="clothings"
-                    title="Clothings"
-                />
-                <HomeDefaultProductListing
-                    collectionSlug="garden-and-kitchen"
-                    title="Garden & Kitchen"
-                />
+                    collectionSlug="Dolls"
+                    title="Dolls"/>
+                <ShopByCharacter /> {/* Use self-closing tag for ShopByCharacter */}
+                <FeaturedProducts />   
+                <ToyStore /> {/* Add the ToyStore component here */}   
+                <ShopByAge /> {/* Corrected to self-closing tag */}
                 <HomeAds />
-                <DownLoadApp />
                 <NewArrivals collectionSlug="new-arrivals-products" />
-                <Newletters />
+                <PopularBrand />{/* Corrected to self-closing tag */}
+                <Banner/> {/* Corrected to self-closing tag */}
+                <LatestNews/>
+                <Newletters /> 
+                {/* <DownLoadApp /> */}
             </main>
         </PageContainer>
     );

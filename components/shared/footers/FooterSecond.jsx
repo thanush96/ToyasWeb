@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-
+ 
 const FooterSecond = ({ classes }) => (
     <footer className={`ps-footer ps-footer--2 ${classes}`}>
         <div className="container">
@@ -144,9 +144,9 @@ const FooterSecond = ({ classes }) => (
                 </div>
             </div>
             <div className="ps-footer__copyright">
-                <p>&copy;2021 Martfury . All Rights Reserved</p>
+                <p>&copy;2024 LOUVIE'S TOYS. All Rights Reserved by LOUVIE'S TOYS</p>
                 <p>
-                    <span>We Using Safe Payment For:</span>
+                    <span>Payment For:</span>
                     <Link href="/page/blank">
                         <a>
                             <img
