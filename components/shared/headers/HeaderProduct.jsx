@@ -24,7 +24,7 @@ const HeaderProduct = ({ product }) => {
                 <div className="ps-container">
                     <div className="header__left">
                         <Logo />
-                        <div className="menu--product-categories">
+                        {/* <div className="menu--product-categories">
                             <div className="menu__toggle">
                                 <i className="icon-menu"></i>
                                 <span> Shop by Department</span>
@@ -32,7 +32,7 @@ const HeaderProduct = ({ product }) => {
                             <div className="menu__content">
                                 <MenuCategories />
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="header__center">
                         <SearchHeader />

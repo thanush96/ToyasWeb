@@ -91,7 +91,7 @@ const HeaderMarketPlace2 = () => {
                                 />
                             </a>
                         </Link>
-                        <div className="menu--product-categories">
+                        {/* <div className="menu--product-categories">
                             <div className="menu__toggle">
                                 <i className="icon-menu"></i>
                                 <span> Shop by Department</span>
@@ -102,7 +102,7 @@ const HeaderMarketPlace2 = () => {
                                     className="menu--dropdown"
                                 />
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="header__content-center">
                         <SearchHeader />

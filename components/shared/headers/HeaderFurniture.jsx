@@ -28,7 +28,7 @@ const HeaderFurniture = () => {
                                 />
                             </a>
                         </Link>
-                        <div className="menu--product-categories">
+                        {/* <div className="menu--product-categories">
                             <div className="menu__toggle">
                                 <i className="icon-menu"></i>
                                 <span> Shop by Department</span>
@@ -39,7 +39,7 @@ const HeaderFurniture = () => {
                                     className="menu--dropdown"
                                 />
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="header__center">
                         <SearchHeader />

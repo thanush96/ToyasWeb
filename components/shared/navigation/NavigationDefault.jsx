@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import { notification } from 'antd';
-import Menu from '../../elements/menu/Menu';
 
-import menuData from '../../../public/static/data/menu';
 import CurrencyDropdown from '../headers/modules/CurrencyDropdown';
 import LanguageSwicher from '../headers/modules/LanguageSwicher';
-import MenuCategoriesDropdown from '~/components/shared/menus/MenuCategoriesDropdown';
+import WhatsAppNumber from '../headers/modules/WhatsappNumber';
 
 class NavigationDefault extends Component {
     constructor(props) {
@@ -27,7 +25,11 @@ class NavigationDefault extends Component {
             <nav className="navigation">
                 <div className="ps-container">
                     <div className="navigation__left">
-                        Get free Shipping Order Over 200AED
+                        <img
+                            src="/static/img/icons/delivery-truck.png"
+                            alt="Martfury "
+                        /> 
+                         &nbsp; Get free Shipping Order Over 200AED
                     </div>
                     <div className="navigation__right">
                         {/* <Menu
@@ -36,9 +38,7 @@ class NavigationDefault extends Component {
                         /> */}
                         <ul className="navigation__extra">
                             <li>
-                                <Link href="#">
-                                    <a>+123 4564564565</a>
-                                </Link>
+                                <WhatsAppNumber />
                             </li>
                             <li>
                                 <LanguageSwicher />

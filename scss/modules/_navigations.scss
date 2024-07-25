@@ -53,6 +53,8 @@
 
     .navigation__left {
         max-width: 560px;
+        display: flex;
+        align-items: center;
     }
 
     .navigation__right {

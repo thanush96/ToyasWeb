@@ -85,7 +85,7 @@ const HeaderElectronic = () => {
                                 />
                             </a>
                         </Link>
-                        <div className="menu--product-categories">
+                        {/* <div className="menu--product-categories">
                             <div className="menu__toggle">
                                 <i className="icon-menu"></i>
                                 <span> Shop by Department</span>
@@ -96,7 +96,7 @@ const HeaderElectronic = () => {
                                     className="menu--dropdown"
                                 />
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="header__content-center">
                         <SearchHeader />

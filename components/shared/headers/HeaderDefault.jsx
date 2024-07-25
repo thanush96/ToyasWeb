@@ -18,9 +18,7 @@ const HeaderDefault = () => {
             className="header header--1"
             data-sticky="true"
             id="headerSticky">
-
             <NavigationDefault />
-
 
             <div className="header__top">
                 <div className="ps-container">
