@@ -276,7 +276,7 @@
     .ps-block__left {
         i {
             font-size: 40px;
-            color: $color-1st;
+            color: $color-boarder;
         }
     }
 
@@ -357,17 +357,16 @@
     }
 
     @media (max-width: 1440px) {
-        .ps-block__item {
-            flex-flow: row wrap;
-            border-right: none;
-        }
-        .ps-block__left {
-            margin-bottom: 15px;
-        }
-        .ps-block__right {
-            width: 100%;
-            padding-left: 0;
-        }
+        // .ps-block__item {
+        //     flex-flow: row wrap;
+        // }
+        // .ps-block__left {
+        //     margin-bottom: 15px;
+        // }
+        // .ps-block__right {
+        //     width: 100%;
+        //     padding-left: 0;
+        // }
     }
 
     @media (max-width: 1024px) {
@@ -376,6 +375,8 @@
             margin-bottom: 30px;
             max-width: 25%;
             padding: 0;
+            border-right: none;
+
         }
     }
 

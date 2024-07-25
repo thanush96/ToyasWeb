@@ -32,6 +32,17 @@
         flex-basis: 100%;
     }
 
+    button {
+        max-width: 100px;
+        color: #000000;
+        border: none;
+        border-radius: 0 4px 4px 0;
+        // background-color: $color-heading;
+        background-color: #ffffff;
+        font-size: 22px;
+        padding-top: 5px;
+    }
+
     .ps-form__categories {
         position: relative;
         background-color: #fff;
@@ -115,16 +126,6 @@
         }
     }
 
-    button {
-        max-width: 100px;
-        color: #ffffff;
-        border: none;
-        font-weight: 700;
-        padding: 0 24px;
-        border-radius: 0 4px 4px 0;
-        background-color: $color-heading;
-    }
-
     .ps-panel--search-result {
         position: absolute;
         top: 100%;
@@ -156,7 +157,6 @@
         }
     }
 }
-
 
 .ps-form--widget-search {
     position: relative;

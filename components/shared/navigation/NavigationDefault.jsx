@@ -27,29 +27,24 @@ class NavigationDefault extends Component {
             <nav className="navigation">
                 <div className="ps-container">
                     <div className="navigation__left">
-                        <MenuCategoriesDropdown />
+                        Get free Shipping Order Over 200AED
                     </div>
                     <div className="navigation__right">
-                        <Menu
+                        {/* <Menu
                             source={menuData.menuPrimary.menu_1}
                             className="menu"
-                        />
+                        /> */}
                         <ul className="navigation__extra">
                             <li>
-                                <Link href="/vendor/become-a-vendor">
-                                    <a>Sell on Martfury </a>
+                                <Link href="#">
+                                    <a>+123 4564564565</a>
                                 </Link>
-                            </li>
-                            <li>
-                                <Link href="/account/order-tracking">
-                                    <a>Tract your order</a>
-                                </Link>
-                            </li>
-                            <li>
-                                <CurrencyDropdown />
                             </li>
                             <li>
                                 <LanguageSwicher />
+                            </li>
+                            <li>
+                                <CurrencyDropdown />
                             </li>
                         </ul>
                     </div>

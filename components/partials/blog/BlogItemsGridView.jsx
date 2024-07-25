@@ -70,7 +70,7 @@ const BlogItemsGridView = ({ collectionSlug, columns }) => {
                 <ul className="ps-list--blog-links">
                     <li className="active">
                         <Link href="/blog">
-                            <a>All</a>
+                            <a>All Category</a>
                         </Link>
                     </li>
                     <li>

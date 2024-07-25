@@ -1,6 +1,8 @@
 .navigation {
-    background-color: $color-1st;
+    background-color: $color-gray2;
     transition: all 0.25s ease;
+    font-size: 13px;
+    padding: 9px;
 
     > .ps-container,
     > .container {
@@ -50,15 +52,15 @@
     }
 
     .navigation__left {
-        max-width: 260px;
+        max-width: 560px;
     }
 
     .navigation__right {
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-between;
         align-items: center;
         padding-left: 35px;
+        justify-content: flex-end;
     }
 }
 
@@ -113,7 +115,7 @@
             margin-bottom: 10px;
 
             > a {
-                font-size: 1.4rem;
+                // font-size: 1.4rem;
                 color: $color-text;
             }
         }
@@ -123,13 +125,13 @@
         position: relative;
         text-align: center;
         padding: 15px 0;
-        background-color: $color-1st;
+        background-color: $color-gray2;
 
         h3 {
             margin-bottom: 0;
-            font-weight: 600;
+            // font-weight: 600;
             color: #ffffff;
-            font-size: 1.6rem;
+            // font-size: 1.6rem;
             line-height: 20px;
             text-transform: uppercase;
             letter-spacing: 0.05em;
@@ -159,7 +161,7 @@
             line-height: 40px;
 
             i {
-                font-size: 24px;
+                // font-size: 24px;
                 color: $color-heading;
                 vertical-align: middle;
             }
@@ -195,7 +197,7 @@
                     @include center();
                     color: #ffffff;
                     font-style: normal;
-                    font-size: 11px;
+                    // font-size: 11px;
                 }
             }
         }
@@ -230,7 +232,7 @@
         text-align: center;
 
         i {
-            font-size: 24px;
+            // font-size: 24px;
         }
 
         span {
@@ -239,11 +241,11 @@
 
         &.active {
             i {
-                color: $color-1st;
+                color: $color-gray2;
             }
 
             span {
-                color: $color-1st;
+                color: $color-gray2;
             }
         }
     }
@@ -276,7 +278,7 @@
     > * {
         width: 100%;
         flex-basis: 50%;
-        font-size: 16px;
+        // font-size: 16px;
         border-radius: 0;
         text-align: center;
     }

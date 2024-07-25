@@ -6,7 +6,7 @@ import ProductRepository from '~/repositories/ProductRepository';
 import ProductSearchResult from '~/components/elements/products/ProductSearchResult';
 
 const exampleCategories = [
-    'All',
+    'All Category',
     'Babies & Moms',
     'Books & Office',
     'Cars & Motocycles',
@@ -185,13 +185,17 @@ const SearchHeader = () => {
                     className="form-control"
                     type="text"
                     value={keyword}
-                    placeholder="I'm shopping for..."
+                    placeholder="Search for anything..."
                     onChange={(e) => setKeyword(e.target.value)}
                 />
                 {clearTextView}
                 {loadingView}
             </div>
-            <button onClick={handleSubmit}>Search</button>
+
+            <button onClick={handleSubmit}>
+                <i className="icon-magnifier"></i>
+            </button>
+            {/* <button onClick={handleSubmit}>Search</button> */}
             <div
                 className={`ps-panel--search-result${
                     isSearch ? ' active ' : ''

@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import NextArrow from '~/components/elements/carousel/NextArrow';
@@ -67,6 +66,31 @@ const HomeDefaultBanner = () => {
                     </div>
                 </div>
                 <div className="ps-section__right">
+                    <div className="nav-bar">
+                        <ul>
+                            <li>
+                                <a>Home</a>
+                            </li>
+                            <li>
+                                <a>Eduction Toys</a>
+                            </li>
+                            <li>
+                                <a>Activity Toys</a>
+                            </li>
+                            <li>
+                                <a>Body & Toddler</a>
+                            </li>
+                            <li>
+                                <a>Action Figures</a>
+                            </li>
+                            <li>
+                                <a>
+                                    <i className="fas fa-info-circle"></i> Need
+                                    Help
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                     {mainCarouselView}
                 </div>
             </div>

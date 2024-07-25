@@ -35,10 +35,10 @@ const Menu = ({ source, className }) => {
         );
     }
     return (
-        <div>
-            <h5>
+        <div className='menu'>
+            <dev className="menu-title">
                 Top Categories <i className="fa fa-caret-up"></i>
-            </h5>
+            </dev>
             <ul className={className}>{menuView}</ul>
         </div>
     );
