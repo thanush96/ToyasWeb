@@ -59,12 +59,11 @@
 }
 
 .ps-block--category {
-    height: 200px;
     margin-bottom: 30px;
     padding: 20px 10px;
     text-align: center;
     transition: all 0.4s ease;
-    // border: 1px solid #bfbfbf;
+    border: 1px solid #bfbfbf;
 
     a {
         @include max-area();

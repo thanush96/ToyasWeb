@@ -1,26 +1,40 @@
-
 import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import NextArrow from '~/components/elements/carousel/NextArrow';
 import PrevArrow from '~/components/elements/carousel/PrevArrow';
 import Link from 'next/link';
-import Menu from '~/components/elements/menu/Menu';
-import menuData from '~/public/static/data/menu.json';
-
-// Import the local images
-import bannerImage1 from '~/public/static/img/banner/banner1.jpg';
-import bannerImage2 from '~/public/static/img/banner/banner2.png';
+import MediaRepository from '~/repositories/MediaRepository';
+import { baseUrl } from '~/repositories/Repository';
+import { getItemBySlug } from '~/utilities/product-helper';
+import Promotion from '~/components/elements/media/Promotion';
 
 const HomeDefaultBanner = () => {
-    const [bannerItems, setBannerItems] = useState([]);
+    const [bannerItems, setBannerItems] = useState(null);
+    const [promotion1, setPromotion1] = useState(null);
+    const [promotion2, setPromotion2] = useState(null);
+
+    async function getBannerItems() {
+        const responseData = await MediaRepository.getBannersBySlug(
+            'banner-home-fullwidth'
+        );
+        if (responseData) {
+            setBannerItems(responseData);
+        }
+    }
+
+    async function getPromotions() {
+        const responseData = await MediaRepository.getPromotionsBySlug(
+            'home_fullwidth_promotions'
+        );
+        if (responseData) {
+            setPromotion1(getItemBySlug(responseData, 'main_1'));
+            setPromotion2(getItemBySlug(responseData, 'main_2'));
+        }
+    }
 
     useEffect(() => {
-        // Set local images to state
-        const localBanners = [
-            { id: 1, image: bannerImage1 },
-            { id: 2, image: bannerImage2 },
-        ];
-        setBannerItems(localBanners);
+        getBannerItems();
+        getPromotions();
     }, []);
 
     const carouselSetting = {
@@ -36,14 +50,14 @@ const HomeDefaultBanner = () => {
 
     // Views
     let mainCarouselView;
-    if (bannerItems.length > 0) {
+    if (bannerItems) {
         const carouseItems = bannerItems.map((item) => (
             <div className="slide-item" key={item.id}>
                 <Link href="/shop">
                     <a
                         className="ps-banner-item--default bg--cover"
                         style={{
-                            backgroundImage: `url(${item.image.src})`,
+                            backgroundImage: `url(${baseUrl}${item.image.url})`,
                         }}
                     />
                 </Link>
@@ -58,16 +72,16 @@ const HomeDefaultBanner = () => {
     return (
         <div className="ps-home-banner ps-home-banner--1">
             <div className="ps-container">
-                <div className="ps-section__left">
-                    <div className="menu__content">
-                        <Menu
-                            source={menuData.product_categories}
-                            className="menu--dropdown"
-                        />
-                    </div>
-                </div>
+                <div className="ps-section__left">{mainCarouselView}</div>
                 <div className="ps-section__right">
-                    {mainCarouselView}
+                    <Promotion
+                        link="/shop"
+                        image={promotion1 ? promotion1.image : null}
+                    />
+                    <Promotion
+                        link="/shop"
+                        image={promotion2 ? promotion2.image : null}
+                    />
                 </div>
             </div>
         </div>

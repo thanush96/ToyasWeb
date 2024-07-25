@@ -15,18 +15,18 @@
 
         span {
             position: absolute;
-            top: 0;
+            bottom: 0;
             right: -6px;
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: #fff;
             vertical-align: top;
             width: 20px;
             height: 20px;
-            color: #000000;
-            background-color: #ffffff;
+            color: #ffffff;
+            background-color: #000000;
             border-radius: 50%;
-            border: 1px solid;
 
             i {
                 font-size: 12px;
@@ -54,7 +54,7 @@
     }
 
     .header__left {
-        max-width: 250px;
+        max-width: 300px;
         display: flex;
         align-items: center;
 
@@ -79,11 +79,9 @@
         .container {
             display: flex;
             flex-flow: row nowrap;
-            align-items: center;
 
             > * {
                 width: 100%;
-                padding: 0 2rem;
             }
         }
     }

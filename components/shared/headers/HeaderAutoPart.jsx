@@ -114,7 +114,7 @@ const HeaderAutoPart = () => {
                             <a className="ps-logo">
                                 <img
                                     src="/static/img/logo-autopart.png"
-                                    alt="Martfury "
+                                    alt="martfury"
                                 />
                             </a>
                         </Link>

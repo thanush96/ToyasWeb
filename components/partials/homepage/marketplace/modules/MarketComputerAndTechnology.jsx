@@ -94,19 +94,19 @@ const MarketComputerAndTechnology = ({ collectionSlug }) => {
                     <a>
                         <img
                             src="/static/img/slider/home-3/technology-1.jpg"
-                            alt="Martfury "
+                            alt="martfury"
                         />
                     </a>
                     <a>
                         <img
                             src="/static/img/slider/home-3/technology-2.jpg"
-                            alt="Martfury "
+                            alt="martfury"
                         />
                     </a>
                     <a>
                         <img
                             src="/static/img/slider/home-3/technology-3.jpg"
-                            alt="Martfury "
+                            alt="martfury"
                         />
                     </a>
                 </Slider>

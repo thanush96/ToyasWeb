@@ -14,13 +14,13 @@ class HeaderMobileAutopart extends Component {
             <header className="header header--mobile autopart">
                 <div className="header__top">
                     <div className="header__left">
-                        <p>Welcome to Martfury  Online Shopping Store !</p>
+                        <p>Welcome to Martfury Online Shopping Store !</p>
                     </div>
                     <div className="header__right">
                         <ul className="navigation__extra">
                             <li>
                                 <Link href="/vendor/become-a-vendor">
-                                    <a>Sell on Martfury </a>
+                                    <a>Sell on Martfury</a>
                                 </Link>
                             </li>
                             <li>
@@ -43,7 +43,7 @@ class HeaderMobileAutopart extends Component {
                             <a className="ps-logo">
                                 <img
                                     src="/static/img/logo-autopart.png"
-                                    alt="Martfury "
+                                    alt="martfury"
                                 />
                             </a>
                         </Link>

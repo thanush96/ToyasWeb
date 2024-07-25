@@ -79,7 +79,7 @@ class ProductDetailImageSwatches extends Component {
                                                                     src={
                                                                         item.image
                                                                     }
-                                                                    alt="Martfury "
+                                                                    alt="martfury"
                                                                 />
                                                             </a>
                                                         </div>
@@ -109,7 +109,7 @@ class ProductDetailImageSwatches extends Component {
                                             <div className="item" key={item.id}>
                                                 <img
                                                     src={item.image}
-                                                    alt="Martfury "
+                                                    alt="martfury"
                                                 />
                                             </div>
                                         ))}
@@ -175,7 +175,7 @@ class ProductDetailImageSwatches extends Component {
                                             </span>
                                             <img
                                                 src={variant.image}
-                                                alt="Martfury "
+                                                alt="martfury"
                                             />
                                         </div>
                                     );
@@ -234,9 +234,9 @@ class ProductDetailImageSwatches extends Component {
                                 <a href="#">
                                     <i className="icon-heart"></i>
                                 </a>
-                                {/* <a href="#">
+                                <a href="#">
                                     <i className="icon-chart-bars"></i>
-                                </a> */}
+                                </a>
                             </div>
                         </div>
                         <div className="ps-product__specification">

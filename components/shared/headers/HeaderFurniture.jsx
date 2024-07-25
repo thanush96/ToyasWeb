@@ -24,7 +24,7 @@ const HeaderFurniture = () => {
                             <a className="ps-logo">
                                 <img
                                     src="/static/img/logo-furniture.png"
-                                    alt="Martfury "
+                                    alt="martfury"
                                 />
                             </a>
                         </Link>
@@ -61,7 +61,7 @@ const HeaderFurniture = () => {
                         <ul className="navigation__extra">
                             <li>
                                 <Link href="/page/blank">
-                                    <a>Sell on Martfury  testing my data</a>
+                                    <a>Sell on Martfury</a>
                                 </Link>
                             </li>
                             <li>

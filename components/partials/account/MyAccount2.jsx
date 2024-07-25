@@ -124,7 +124,7 @@ class MyAccount extends Component {
                             <figure className="ps-section__desc">
                                 <figcaption>Sign up today and you will be able to:</figcaption>
                                 <p>
-                                    Martfury  Buyer Protection has you covered from click to
+                                    MartFury Buyer Protection has you covered from click to
                                     delivery. Sign up or sign in and you will be able to:
                                 </p>
                                 <ul className="ps-list">
@@ -136,10 +136,10 @@ class MyAccount extends Component {
                                         <i className="icon-clipboard-check"></i>
                                         <span>TRACK YOUR ORDERS EASILY</span>
                                     </li>
-                                    {/* <li>
+                                    <li>
                                         <i className="icon-bag2"></i>
                                         <span>KEEP A RECORD OF ALL YOUR PURCHASES</span>
-                                    </li> */}
+                                    </li>
                                 </ul>
                             </figure>
                             <div className="ps-section__coupon">
@@ -147,8 +147,8 @@ class MyAccount extends Component {
                                 <aside>
                                     <h5>A small gift for your first purchase</h5>
                                     <p>
-                                        Martfury  give $25 as a small gift for your first purchase.
-                                        Welcome to Martfury !
+                                        Martfury give $25 as a small gift for your first purchase.
+                                        Welcome to Martfury!
                                     </p>
                                 </aside>
                             </div>

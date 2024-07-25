@@ -22,7 +22,7 @@ const HeaderMarketPlace4 = () => {
             <div className="header__top">
                 <div className="container">
                     <div className="header__left">
-                        <p>Welcome to Martfury  Online Shopping Store ! 4</p>
+                        <p>Welcome to Martfury Online Shopping Store !</p>
                     </div>
                     <div className="header__right">
                         <ul className="header__top-links">
@@ -53,7 +53,7 @@ const HeaderMarketPlace4 = () => {
                             <a className="ps-logo">
                                 <img
                                     src="/static/img/logo_light.png"
-                                    alt="Martfury "
+                                    alt="martfury"
                                 />
                             </a>
                         </Link>

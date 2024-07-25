@@ -10,7 +10,7 @@ const FooterWidgets = () => (
                 <h3>1800 97 97 69</h3>
                 <p>
                     502 New Design Str, Melbourne, Australia <br />
-                    <a href="mailto:contact@Martfury .co">contact@Martfury .co</a>
+                    <a href="mailto:contact@martfury.co">contact@martfury.co</a>
                 </p>
                 <ul className="ps-list--social">
                     <li>
