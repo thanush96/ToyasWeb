@@ -1,32 +1,112 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import Link from 'next/link';
+// import Link from 'next/link';
 import useProduct from '~/hooks/useProduct';
 import Rating from '../Rating';
-import { StrapiProductPriceExpanded } from '~/utilities/product-helper';
-import ModuleProductActions from '~/components/elements/products/modules/ModuleProductActions';
-import ModuleProductProgressbar from '~/components/elements/products/modules/ModuleProductProgressbar';
+// import { StrapiProductPriceExpanded } from '~/utilities/product-helper';
+// import ModuleProductActions from '~/components/elements/products/modules/ModuleProductActions';
+// import ModuleProductProgressbar from '~/components/elements/products/modules/ModuleProductProgressbar';
 
-const ProductDealOfDay = ({ product }) => {
+const ProductDealOfDay = ({ product, index }) => {
     const { thumbnailImage, badge, title } = useProduct();
 
     return (
-        <div className="product">
+        <div className={`product item${index + 1}`}>
             <div className="product-thumbnail">
-                {product.status && <span className={`product-status ${product.status}`}>{product.status.replace('-', ' ')}</span>}
-                {product.discount && <span className="product-discount">{product.discount}</span>}
-                <img src={product.image} alt={product.title} />
+                {product.status && (
+                    <span
+                        className={`product-status ${product.status} ${
+                            product.status === 'SOLD OUT' ? 'sold-out' : ''
+                        }`}>
+                        {product.status.replace('-', ' ')}
+                    </span>
+                )}
+
+                {product.discount && (
+                    <span className="product-discount">{product.discount}</span>
+                )}
+                {product.feature ? (
+                    <img
+                        className="feature-image"
+                        src={product.image}
+                        alt={product.title}
+                    />
+                ) : (
+                    <img
+                        className="image"
+                        src={product.image}
+                        alt={product.title}
+                    />
+                )}
                 <div className="product-hover-icons">
-                    <button className="hover-icon"><i className="fas fa-shopping-cart"></i></button>
-                    <button className="hover-icon"><i className="fas fa-list-alt"></i></button>
-                    <button className="hover-icon"><i className="fas fa-eye"></i></button>
+                    <button className="hover-icon">
+                        <i className="fas fa-shopping-cart"></i>
+                    </button>
+                    <button className="hover-icon">
+                        <i className="fas fa-list-alt"></i>
+                    </button>
+                    <button className="hover-icon">
+                        <i className="fas fa-eye"></i>
+                    </button>
                 </div>
             </div>
-            <div className="product-details">
-                <p>{product.title}</p>
-                <p>{product.price}</p>
-            </div>
+
+            {product.feature ? (
+                <div>
+                    <div className="ps-product__content">
+                        <div className="ps-product__rating">
+                            <Rating />
+                            <span> (52,933)</span>
+                        </div>
+                    </div>
+                    <div className="ps-product__content hover">
+                        <span className="bold">{product.title}</span>
+                        <div className="price">
+                            <p className="old">
+                                <s>{product.old_price}</s>
+                            </p>
+                            &nbsp;
+                            <p className="new">{product.price} </p>
+                        </div>
+                    </div>
+
+                    <p style={{ maxWidth: '300px', wordWrap: 'break-word' }}>
+                        {product.description}
+                    </p>
+
+                    <a className="ps-btn ps-btn--white" href="#">
+                        <i className="icon-heart"></i>
+                    </a>
+
+                    <a className="ps-btn ps-btn--black" href="#">
+                        <i className="fas fa-shopping-cart"></i>
+                        &nbsp; ADD TO CARD
+                    </a>
+
+                    <a className="ps-btn ps-btn--white" href="#">
+                        <i className="fas fa-eye"></i>
+                    </a>
+
+                    {/* <button className="hover-icon ps-btn--white">
+                        <i className="fas fa-eye"></i>
+                    </button> */}
+                </div>
+            ) : (
+                <div className="product-details">
+                    <p style={{ maxWidth: '200px', wordWrap: 'break-word' }}>
+                        {product.title}
+                    </p>
+
+                    <div className="price">
+                        <p className="old">
+                            <s>{product.old_price}</s>
+                        </p>
+                        &nbsp;
+                        <p className="new">{product.price} </p>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };

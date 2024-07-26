@@ -80,7 +80,9 @@ button {
 .ps-btn,
 button.ps-btn {
     display: inline-block;
-    padding: 15px 45px;
+    // padding: 15px 45px;
+    padding: 15px 20px;
+    margin: 0 7px;
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
@@ -152,6 +154,7 @@ button.ps-btn {
 
     &.ps-btn--black {
         background-color: $color-heading;
+        color: white;
 
         &.ps-btn--outline {
             background-color: transparent;
