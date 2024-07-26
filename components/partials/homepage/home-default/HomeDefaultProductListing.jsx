@@ -62,7 +62,6 @@ const mockProducts = [
         id: 7,
         title: 'In publishing and graphic design, Lorem ipsum is ',
         price: '$1000',
-        status: 'HOT',
         discount: null,
         image: '/static/img/categories/images/d7.png',
     },
