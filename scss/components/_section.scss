@@ -2555,6 +2555,8 @@
 .character-grid {
     display: flex;
     gap: 110px;
+    align-items: center;
+    flex-direction: column;
 }
 
 .character-card-wrapper {
