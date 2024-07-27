@@ -1,37 +1,27 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-
-const featuredProducts = [
+const featuredProductSingle = [
     {
         id: 1,
-        title: 'Lorem ipsum dolor sit amet  ipsum dolor sit',
+        title: 'Teddy Bear Toy',
         description:
             'Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetur adipiscing',
         image: '/static/img/categories/images/d1.png',
-        status: 'New Coming',
+        status: 'SAVE UP TO $200.00',
         price: null,
-    },
-    {
-        id: 2,
-        title: 'Lorem ipsum dolor sit amet  ipsum dolor sit',
-        description:
-            'Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetur adipiscing',
-        image: '/static/img/categories/images/d2.png',
-        status: 'New Coming',
-        price: '$590',
     },
 ];
 
-const FeaturedProducts = () => {
+const FeaturedProductSingle = () => {
     return (
-        <div className="featuredProducts">
-            {featuredProducts.map((product) => (
+        <div className="featuredProductSingle">
+            {featuredProductSingle.map((product) => (
                 <div className="productCard" key={product.id}>
                     <div className="productContent">
                         <span className="productStatus">{product.status}</span>
-                        <h3>{product.title}</h3>
-                        <p>{product.description}</p>
+                        <h2>{product.title}</h2>
+                        <p className='description'>{product.description}</p>
 
                         <a
                             className={`ps-btn ps-btn--black ${
@@ -47,12 +37,12 @@ const FeaturedProducts = () => {
                         </Link> */}
                     </div>
                     <div className="productImage">
-                        <Image
+                        {/* <Image
                             src={product.image}
                             alt={product.title}
                             width={200}
                             height={200}
-                        />
+                        /> */}
                         {product.price && (
                             <span className="productPrice">
                                 {product.price}
@@ -65,4 +55,4 @@ const FeaturedProducts = () => {
     );
 };
 
-export default FeaturedProducts;
+export default FeaturedProductSingle;

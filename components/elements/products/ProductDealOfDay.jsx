@@ -94,6 +94,8 @@ const ProductDealOfDay = ({ product, index }) => {
                 </div>
             ) : (
                 <div className="product-details">
+                    {product.rating ? <Rating /> : null}
+
                     <p style={{ maxWidth: '200px', wordWrap: 'break-word' }}>
                         {product.title}
                     </p>

@@ -20,6 +20,8 @@ import PopularBrand from '~/components/elements/skeletons/PopularBrand';
 import Banner from '~/components/elements/skeletons/Banner';
 import LatestNews from '~/components/elements/skeletons/LatestNews';
 import HomeBestSellingProductListing from '~/components/partials/homepage/home-default/HomeBestSelling';
+import FeaturedProductSingle from '~/components/elements/skeletons/FeaturedProductsSingle';
+import FeaturedList from '~/components/partials/homepage/home-default/FeaturedList';
 
 const HomepageDefaultPage = () => {
     return (
@@ -36,20 +38,25 @@ const HomepageDefaultPage = () => {
                 />
                 <ShopByCharacter />
                 <FeaturedProducts />
-                
+
                 <HomeBestSellingProductListing
                     collectionSlug="BestSellingProducts"
                     title="Best Selling Products"
                 />
 
+                <FeaturedProductSingle />
+
+                <FeaturedList />
+
+
                 {/* <ToyStore /> */}
-                <ShopByAge /> 
+                <ShopByAge />
                 <HomeAds />
                 <NewArrivals collectionSlug="new-arrivals-products" />
                 <PopularBrand />
-                <Banner/> 
-                <LatestNews/>
-                <Newletters /> 
+                <Banner />
+                <LatestNews />
+                <Newletters />
                 {/* <DownLoadApp /> */}
             </main>
         </PageContainer>
