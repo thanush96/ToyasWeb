@@ -5,10 +5,10 @@ const FooterWidgets = () => (
     <div className="ps-footer__widgets">
         <aside className="widget widget_footer widget_contact-us">
             <div className="logo">
-                <img src="/static/img/categories/images/m1.png" alt="Logo" />
+                <img src="/static/img/logo_light.png" alt="Logo" />
             </div>
             <p>
-                Lorem ipsum dolor sit amet consectetur. Idfames there are many vulputate eget dolor.
+                Lorem ipsum dolor sit amet consectetur.
             </p>
             <ul className="contact-info">
                 <li>

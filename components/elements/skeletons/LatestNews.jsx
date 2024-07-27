@@ -7,7 +7,7 @@ const newsItems = [
         title: 'Lorem Ipsum dolor sit amet construct quis',
         date: '27 Dec, 2023',
         category: 'Top Toys',
-        image: '/static/img/categories/images/d1.png',
+        image: '/static/img/categories/images/fam.png',
         author: 'Admin'
     },
     {
@@ -15,7 +15,7 @@ const newsItems = [
         title: 'Lorem Ipsum dolor sit amet construct quis',
         date: '21 Dec, 2023',
         category: 'Family Fun',
-        image: '/static/img/categories/images/d1.png',
+        image: '/static/img/categories/images/fam.png',
         author: 'Admin'
     },
     {
@@ -23,7 +23,7 @@ const newsItems = [
         title: 'Lorem Ipsum dolor sit amet construct quis',
         date: '21 Dec, 2023',
         category: 'Kids Activities',
-        image: '/static/img/categories/images/d1.png',
+        image: '/static/img/categories/images/fam.png',
         author: 'Admin'
     },
     {
@@ -31,7 +31,7 @@ const newsItems = [
         title: 'Lorem Ipsum dolor sit amet construct quis',
         date: '21 Dec, 2023',
         category: 'Learn & Inspire',
-        image: '/static/img/categories/images/d1.png',
+        image: '/static/img/categories/images/fam.png',
         author: 'Admin'
     },
 ];
@@ -44,14 +44,14 @@ const LatestNews = () => {
             <div className="newsGrid">
                 {newsItems.map(item => (
                     <div key={item.id} className="newsItem">
-                        <Image src={item.image} alt={item.title} width={300} height={200} />
+                        <Image src={item.image} alt={item.title} width={300} height={230} />
                         <h3>{item.title}</h3>
                         <div className="newsMeta">
                             <span>{item.date}</span> | <span>{item.category}</span>
                         </div>
                         <p>Lorem ipsum dolor sit amet construct.Quis vel nunc est aliquam luctus.</p>
                         <div className="newsAuthor">
-                            <Image src="/static/img/categories/images/d1.png" alt={item.author} width={30} height={30} />
+                            <Image src="/static/img/categories/images/user.png" alt={item.author} width={30} height={30} />
                             <span>Posted By: {item.author}</span>
                         </div>
                     </div>

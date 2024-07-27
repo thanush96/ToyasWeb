@@ -22,6 +22,7 @@ import LatestNews from '~/components/elements/skeletons/LatestNews';
 import HomeBestSellingProductListing from '~/components/partials/homepage/home-default/HomeBestSelling';
 import FeaturedProductSingle from '~/components/elements/skeletons/FeaturedProductsSingle';
 import FeaturedList from '~/components/partials/homepage/home-default/FeaturedList';
+import FeaturedProductSingleTwo from '~/components/elements/skeletons/FeaturedProductsSingleTwo';
 
 const HomepageDefaultPage = () => {
     return (
@@ -54,7 +55,10 @@ const HomepageDefaultPage = () => {
                 <HomeAds />
                 <NewArrivals collectionSlug="new-arrivals-products" />
                 <PopularBrand />
-                <Banner />
+                {/* <Banner /> */}
+
+                <FeaturedProductSingleTwo />
+
                 <LatestNews />
                 <Newletters />
                 {/* <DownLoadApp /> */}

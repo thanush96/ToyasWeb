@@ -18,7 +18,7 @@ const Newsletters = ({ layout }) => (
                             type="email"
                             placeholder="Your Email Address"
                         />
-                        <button className="ps-btn">Subscribe Now!</button>
+                        <button className="ps-btn">Subscribe!</button>
                     </div>
                 </form>
             </div>
