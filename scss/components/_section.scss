@@ -190,7 +190,7 @@
         h3 {
             margin-bottom: 0;
             display: inline-block;
-            font-size: 30px;
+            font-size: 23px;
             font-weight: 500;
             line-height: 1;
         }
@@ -293,7 +293,7 @@
 .ps-top-categories {
     h3 {
         margin-bottom: 20px;
-        font-size: 30px;
+        font-size: 23px;
         line-height: 1em;
         color: $color-heading;
         font-weight: 600;
@@ -2641,9 +2641,9 @@
     border-radius: 18px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    padding: 5px;
+    padding: 5px 14px;
     width: 50%;
     position: relative;
 }
@@ -2690,21 +2690,6 @@
     color: #fff;
 }
 
-.shopNowButton {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #000;
-    color: #fff;
-    border-radius: 4px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.productCard:nth-child(2) .shopNowButton {
-    background-color: #000;
-    color: #fff;
-}
 
 .productImage {
     margin-top: 20px;
@@ -2728,12 +2713,17 @@
     border-radius: 50%;
     font-size: 18px;
     font-weight: bold;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.productCard:nth-child(2) .productPrice {
-    background-color: #ffd700;
-    color: #000;
-}
+// .productCard:nth-child(2) .productPrice {
+//     background-color: #ffd700;
+//     color: #000;
+// }
 
 // Toystore styles
 .toyStore {
@@ -3293,6 +3283,22 @@
         text-align: center;
     }
 }
+
+.grid-container__bast_selling {
+    display: grid;
+    grid-template-areas:
+        'footer5 menu main right footer'
+        'footer5 footer1 footer2 footer3 footer4';
+
+    .product-item {
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+
+
 
 //PopularBrand.jsx styles
 .popularBrand {

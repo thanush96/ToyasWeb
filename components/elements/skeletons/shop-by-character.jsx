@@ -65,6 +65,8 @@ const categories = [
     { id: 10, img: '/static/img/categories/2.png', label: 'Educational Toy' },
     { id: 11, img: '/static/img/categories/3.png', label: 'Puzzle' },
     { id: 12, img: '/static/img/categories/4.png', label: 'Indoor Play' },
+
+    
 ];
 
 const HomeDefaultTopCategories = () => {

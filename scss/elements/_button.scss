@@ -82,7 +82,7 @@ button.ps-btn {
     display: inline-block;
     // padding: 15px 45px;
     padding: 15px 20px;
-    margin: 0 7px;
+    margin: 0 2px;
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
@@ -163,6 +163,17 @@ button.ps-btn {
 
             &:hover {
                 background-color: $color-heading;
+                color: #ffffff;
+            }
+        }
+
+        &.ps-btn-white--outline {
+            background-color: transparent;
+            border: 1px solid $color-gray2;
+            color: $color-gray2;
+
+            &:hover {
+                background-color: $color-1st;
                 color: #ffffff;
             }
         }

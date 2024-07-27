@@ -7,7 +7,7 @@ const PrevArrow = (props) => {
             {icon ? (
                 <i className={icon}></i>
             ) : (
-                <i className="icon-chevron-left"></i>
+                <i class="fa-solid fa-arrow-left"></i>
             )}
         </a>
     );

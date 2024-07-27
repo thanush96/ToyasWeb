@@ -23,7 +23,7 @@ const mockProducts = [
         old_price: '$1,200',
         status: null,
         discount: null,
-        image: '/static/img/categories/images/d2.png',
+        image: '/static/img/categories/images/d9.png',
     },
     {
         id: 3,
@@ -80,7 +80,7 @@ const mockProducts = [
         price: '$600',
         status: 'HOT',
         discount: '15% OFF',
-        image: '/static/img/categories/images/d9.png',
+        image: '/static/img/categories/images/d2.png',
         feature: true,
         description:
             'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate',
@@ -89,7 +89,7 @@ const mockProducts = [
 
 ];
 
-const HomeDefaultProductListing = ({ collectionSlug, title }) => {
+const HomeBestSellingProductListing = ({ collectionSlug, title }) => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -132,7 +132,7 @@ const HomeDefaultProductListing = ({ collectionSlug, title }) => {
                         </Link>
                     </div>
                 </div>
-                <div className="grid-container">
+                <div className="grid-container__bast_selling">
                     {/* <div className="ps-section__content"> */}
                     {productItemsView}
                 </div>
@@ -141,4 +141,4 @@ const HomeDefaultProductListing = ({ collectionSlug, title }) => {
     );
 };
 
-export default HomeDefaultProductListing;
+export default HomeBestSellingProductListing;
