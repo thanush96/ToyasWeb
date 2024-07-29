@@ -106,7 +106,7 @@ const ThumbnailDefault = ({ product, vertical = false }) => {
                 asNavFor={gallery}
                 ref={(slider) => (variantCarousel.current = slider)}
                 swipeToSlide={true}
-                arrows={false}
+                arrows={true}
                 slidesToShow={3}
                 vertical={true}
                 infinite={true}

@@ -32,7 +32,7 @@ const ShopDefaultPage = () => {
                     {/* <ShopBanner />
                     <ShopBrands />
                     <ShopCategories /> */}
-                      <NavBar/>
+                      {/* <NavBar/> */}
                     <div className="ps-layout--shop">
                         <div className="ps-layout__left">
                             <WidgetShopCategories />

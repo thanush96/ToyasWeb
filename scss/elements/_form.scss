@@ -488,6 +488,7 @@ textarea.form-control {
         color: $color-heading;
         font-size: 20px;
         line-height: 1em;
+        padding: 5px;
 
         &.up {
             right: 10px;
@@ -500,7 +501,6 @@ textarea.form-control {
 
     .form-control {
         border: 1px solid #ccc;
-        height: 40px;
         padding: 0 25px;
         text-align: center;
         font-size: 14px;

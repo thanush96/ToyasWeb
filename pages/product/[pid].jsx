@@ -12,6 +12,8 @@ import HeaderDefault from '~/components/shared/headers/HeaderDefault';
 import PageContainer from '~/components/layouts/PageContainer';
 import Newletters from '~/components/partials/commons/Newletters';
 import HeaderMobileProduct from '~/components/shared/header-mobile/HeaderMobileProduct';
+import NavBar from '~/components/shared/widgets/NavBar';
+import Menu from '~/components/elements/menu/Menu';
 
 const ProductDefaultPage = () => {
     const router = useRouter();
@@ -74,9 +76,7 @@ const ProductDefaultPage = () => {
     }
 
     return (
-        <PageContainer
-            header={headerView}
-            title={product ? product.title : 'Loading...'}>
+        <PageContainer title={product ? product.title : 'Loading...'}>
             <BreadCrumb breacrumb={breadCrumb} layout="fullwidth" />
             <div className="ps-page--product">
                 <div className="ps-container">
