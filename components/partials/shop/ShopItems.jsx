@@ -32,8 +32,11 @@ const ShopItems = ({ columns = 4, pageSize = 12 }) => {
 
     async function getTotalRecords(params) {
         const responseData = await ProductRepository.getTotalRecords();
-        if (responseData) {
-            setTotal(responseData);
+        if (responseData && typeof responseData.total === 'number') {
+            setTotal(responseData.total);
+        } else {
+            console.error("Unexpected response data", responseData);
+            setTotal(0); // Fallback to 0 or any default value
         }
     }
 
@@ -42,16 +45,12 @@ const ShopItems = ({ columns = 4, pageSize = 12 }) => {
             case 2:
                 setClasses('col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6');
                 return 3;
-                break;
             case 4:
                 setClasses('col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6');
                 return 4;
-                break;
             case 6:
                 setClasses('col-xl-2 col-lg-4 col-md-6 col-sm-6 col-6');
                 return 6;
-                break;
-
             default:
                 setClasses('col-xl-4 col-lg-4 col-md-3 col-sm-6 col-6');
         }
@@ -96,7 +95,7 @@ const ShopItems = ({ columns = 4, pageSize = 12 }) => {
                 );
             } else {
                 productItemsView = productItems.map((item) => (
-                    <ProductWide product={item} />
+                    <ProductWide product={item} key={item.id} />
                 ));
             }
         } else {
@@ -145,7 +144,7 @@ const ShopItems = ({ columns = 4, pageSize = 12 }) => {
             <div className="ps-shopping__footer text-center">
                 <div className="ps-pagination">
                     <Pagination
-                        total={total - 1}
+                        total={total}
                         pageSize={pageSize}
                         responsive={true}
                         showSizeChanger={false}

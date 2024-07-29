@@ -10,6 +10,8 @@ import WidgetShopBrands from '~/components/shared/widgets/WidgetShopBrands';
 import WidgetShopFilterByPriceRange from '~/components/shared/widgets/WidgetShopFilterByPriceRange';
 import PageContainer from '~/components/layouts/PageContainer';
 import Newletters from '~/components/partials/commons/Newletters';
+import ProductCard from '~/components/shared/widgets/ProductCard';
+import NavBar from '~/components/shared/widgets/NavBar';
 
 const ShopDefaultPage = () => {
     const breadCrumb = [
@@ -27,25 +29,27 @@ const ShopDefaultPage = () => {
             <div className="ps-page--shop">
                 <BreadCrumb breacrumb={breadCrumb} layout="fullwidth" />
                 <div className="ps-container">
-                    <ShopBanner />
+                    {/* <ShopBanner />
                     <ShopBrands />
-                    <ShopCategories />
+                    <ShopCategories /> */}
+                      <NavBar/>
                     <div className="ps-layout--shop">
                         <div className="ps-layout__left">
                             <WidgetShopCategories />
-                            <WidgetShopBrands />
                             <WidgetShopFilterByPriceRange />
+                            <WidgetShopBrands />
+                            <ProductCard/>
                         </div>
                         <div className="ps-layout__right">
                             <ProductGroupByCarousel
                                 collectionSlug="shop-best-seller-items"
                                 title="Best Sale Items"
                             />
-                            <ProductGroupByCarousel
+                            {/* <ProductGroupByCarousel
                                 collectionSlug="shop-recommend-items"
                                 title="Recommended Items"
-                            />
-                            <ShopItems columns={6} pageSize={18} />
+                            /> */}
+                            {/* <ShopItems columns={6} pageSize={18} /> */}
                         </div>
                     </div>
                 </div>

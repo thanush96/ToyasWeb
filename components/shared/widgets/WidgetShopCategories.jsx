@@ -1,55 +1,105 @@
 import React, { useEffect, useState } from 'react';
-import ProductRepository from '~/repositories/ProductRepository';
+import { Slider, Radio } from 'antd';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
+const categoriesData = [
+    {
+        name: 'baby & toddler',
+        slug: 'baby-toddler',
+        subcategories: [
+            { name: 'Baby & Toddler', slug: 'baby-toddler-1' },
+            { name: 'Bath Toys', slug: 'bath-toys-1' },
+            { name: 'Baby & Toddler', slug: 'baby-toddler-2' },
+            { name: 'Bath Toys', slug: 'bath-toys-2' }
+        ]
+    },
+    {
+        name: 'Action figure',
+        slug: 'action-figure',
+        subcategories: [
+            { name: 'Baby & Toddler', slug: 'baby-toddler-3' },
+            { name: 'Bath Toys', slug: 'bath-toys-3' },
+            { name: 'Baby & Toddler', slug: 'baby-toddler-4' },
+            { name: 'Bath Toys', slug: 'bath-toys-4' }
+        ]
+    }
+];
+
 const WidgetShopCategories = () => {
     const Router = useRouter();
-    const [categories, setCategories] = useState(null);
+    const [categories, setCategories] = useState([]);
     const [loading, setLoading] = useState(false);
+    const [gender, setGender] = useState(null);
+    const [ageRange, setAgeRange] = useState([0, 18]);
 
     const { slug } = Router.query;
 
-    async function getCategories() {
-        setLoading(true);
-        const responseData = await ProductRepository.getProductCategories();
-        if (responseData) {
-            setCategories(responseData);
-            setTimeout(
-                function () {
-                    setLoading(false);
-                }.bind(this),
-                250
-            );
-        }
-    }
-
     useEffect(() => {
-        getCategories();
+        // Simulate fetching categories
+        setLoading(true);
+        setTimeout(() => {
+            setCategories(categoriesData);
+            setLoading(false);
+        }, 500);
     }, []);
 
-    // Views
-    let categoriesView;
-    if (!loading) {
-        if (categories && categories.length > 0) {
-            const items = categories.map((item) => (
-                <li
-                    key={item.slug}
-                    className={item.slug === slug ? 'active' : ''}>
-                    <Link href={`/category/${item.slug}`}>{item.name}</Link>
-                </li>
-            ));
-            categoriesView = <ul className="ps-list--categories">{items}</ul>;
-        } else {
-        }
-    } else {
-        categoriesView = <p>Loading...</p>;
+    function handleGenderChange(e) {
+        setGender(e.target.value);
+        // Update the query params as needed
     }
+
+    function handleAgeRangeChange(value) {
+        setAgeRange(value);
+        // Update the query params as needed
+    }
+
+    const renderCategories = (categories) => {
+        return categories.map((category) => (
+            <li key={category.slug} className={category.slug === slug ? 'active' : ''}>
+                <Link href={`/category/${category.slug}`}>
+                    <a>
+                        {category.name}
+                    </a>
+                </Link>
+                {category.subcategories && category.subcategories.length > 0 && (
+                    <ul>
+                        {renderCategories(category.subcategories)}
+                    </ul>
+                )}
+            </li>
+        ));
+    };
 
     return (
         <aside className="widget widget_shop">
-            <h4 className="widget-title">Categories</h4>
-            {categoriesView}
+            <h4 className="widget-title">CATEGORY</h4>
+            {!loading && categories && categories.length > 0 && (
+                <ul className="ps-list--categories">
+                    {renderCategories(categories)}
+                </ul>
+            )}
+            
+            <h4 className="widget-title">GENDER</h4>
+            <Radio.Group onChange={handleGenderChange} value={gender} className="gender-options">
+                <Radio value="male">Male</Radio>
+                <Radio value="female">Female</Radio>
+                <Radio value="unisex">Unisex</Radio>
+            </Radio.Group>
+
+            <h4 className="widget-title">AGE RANGE</h4>
+            <Slider
+                range
+                defaultValue={[0, 18]}
+                max={18}
+                value={ageRange}
+                onChange={handleAgeRangeChange}
+            />
+            <div className="age-range-inputs">
+                <input type="text" value={ageRange[0]} readOnly placeholder="Min Years" />
+                <span> - </span>
+                <input type="text" value={ageRange[1]} readOnly placeholder="Max Years" />
+            </div>
         </aside>
     );
 };

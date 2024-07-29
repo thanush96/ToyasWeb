@@ -1,74 +1,48 @@
 import React, { useEffect, useState } from 'react';
-import ProductRepository from '~/repositories/ProductRepository';
-import Link from 'next/link';
-import { Checkbox } from 'antd';
-import { Radio, Input } from 'antd';
+import { Checkbox, Tag } from 'antd';
 import { useRouter } from 'next/router';
-
+ 
 const WidgetShopBrands = () => {
     const Router = useRouter();
     const { slug } = Router.query;
-    const [brands, setBrands] = useState(null);
+    const [brands, setBrands] = useState([]);
     const [loading, setLoading] = useState(false);
 
-    async function getCategories() {
-        setLoading(true);
-        const responseData = await ProductRepository.getBrands();
-        if (responseData) {
-            let brandsGroup = [];
-            if (responseData.length > 0) {
-                responseData.forEach((brand) => {
-                    brandsGroup.push({
-                        id: brand.id,
-                        value: brand.slug,
-                        label: brand.name,
-                    });
-                });
-            }
-            setBrands(brandsGroup);
+    const brandOptions = [
+        { label: 'Lorem', value: 'lorem1' },
+        { label: 'Lorem', value: 'lorem2' },
+        { label: 'Lorem', value: 'lorem3' },
+        { label: 'Lorem', value: 'lorem4' },
+        { label: 'Lorem', value: 'lorem5' },
+        { label: 'Lorem', value: 'lorem6' }
+    ];
 
-            setTimeout(
-                function () {
-                    setLoading(false);
-                }.bind(this),
-                250
-            );
-        }
+    function handleBrandChange(checkedValues) {
+        console.log('Checked Brands: ', checkedValues);
     }
 
-    function handleSelectBrand(e) {
-        Router.push(`/brand/${e.target.value}`);
+    function handleTagClick(tag) {
+        console.log('Tag Clicked: ', tag);
     }
 
-    useEffect(() => {
-        getCategories();
-    }, []);
+    const sampleTags = ['Lorem', 'Lorem', 'Lorem', 'Lorem', 'Lorem', 'Lorem', 'Lorem', 'Lorem', 'Lorem bb'];
 
-    // Views
-    let brandsView;
-    if (!loading) {
-        if (brands && brands.length > 0) {
-            const items = brands.map((item) => (
-                <li key={item.id}>
-                    <Link href={`shop/${item.slug}`}>{item.name}</Link>
-                </li>
-            ));
-            brandsView = <ul className="ps-list--brands">{items}</ul>;
-        } else {
-        }
-    } else {
-        brandsView = <p>Loading...</p>;
-    }
     return (
         <aside className="widget widget_shop widget_shop--brand">
-            <h4 className="widget-title">By Brands</h4>
-            <figure>
-                <Radio.Group
-                    defaultValue={slug}
-                    options={brands}
-                    onChange={handleSelectBrand}
-                />
-            </figure>
+            <h4 className="widget-title">Popular Brands</h4>
+            <Checkbox.Group
+                options={brandOptions}
+                onChange={handleBrandChange}
+                className="brand-checkbox-group"
+            />
+            <h4 className="widget-title2">Popular Tag</h4>
+            <div className="tag-container">
+                {sampleTags.map((tag, index) => (
+                    <Tag key={index} onClick={() => handleTagClick(tag)} className="custom-tag">
+                        {tag}
+                    </Tag>
+                ))}
+            </div>
         </aside>
     );
 };
