@@ -81,17 +81,17 @@ const ProductDefaultPage = () => {
             <div className="ps-page--product">
                 <div className="ps-container">
                     <div className="ps-page__container">
-                        <div className="ps-page__left">{productView}</div>
-                        <div className="ps-page__right">
+                        <div className="ps-page">{productView}</div>
+                        {/* <div className="ps-page__right">
                             <ProductWidgets />
-                        </div>
+                        </div> */}
                     </div>
 
-                    <CustomerBought
+                    {/* <CustomerBought
                         layout="fullwidth"
                         collectionSlug="deal-of-the-day"
-                    />
-                    <RelatedProduct collectionSlug="shop-recommend-items" />
+                    /> */}
+                    {/* <RelatedProduct collectionSlug="shop-recommend-items" /> */}
                 </div>
             </div>
             <Newletters />

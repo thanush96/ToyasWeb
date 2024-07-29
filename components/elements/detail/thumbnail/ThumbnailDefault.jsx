@@ -5,7 +5,7 @@ import { baseUrl } from '~/repositories/Repository';
 import NextArrow from '~/components/elements/carousel/NextArrow';
 import PrevArrow from '~/components/elements/carousel/PrevArrow';
 
-const ThumbnailDefault = ({ product, vertical = true }) => {
+const ThumbnailDefault = ({ product, vertical = false }) => {
     const galleryCarousel = useRef(null);
     const variantCarousel = useRef(null);
     const [gallery, setGallery] = useState(null);
@@ -25,7 +25,8 @@ const ThumbnailDefault = ({ product, vertical = true }) => {
             '/static/img/categories/1.png',
             '/static/img/categories/2.png',
             '/static/img/categories/3.png',
-            '/static/img/categories/4.png',
+            '/static/img/categories/1.png',
+            '/static/img/categories/2.png',
         ];
 
         console.warn('product', product);
@@ -33,7 +34,7 @@ const ThumbnailDefault = ({ product, vertical = true }) => {
         //     product.images.map((item) => {
         //         images.push(`${baseUrl}${item.url}`);
         //     });
-            setProductImages(images);
+        setProductImages(images);
         // }
         setGallery(galleryCarousel.current);
         setVariant(variantCarousel.current);
