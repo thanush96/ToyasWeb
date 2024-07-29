@@ -7,6 +7,8 @@ import ModuleProductDetailSpecification from '~/components/elements/detail/modul
 import ModuleProductDetailSharing from '~/components/elements/detail/modules/ModuleProductDetailSharing';
 import ModuleDetailActionsMobile from '~/components/elements/detail/modules/ModuleDetailActionsMobile';
 import ModuleDetailTopInformation from '~/components/elements/detail/modules/ModuleDetailTopInformation';
+import ModuleProductSafeCheckout from './modules/ModuleProductSafeCheckout';
+import FeaturedListTen from '~/components/partials/homepage/home-default/FeaturedListTen';
 
 const ProductDetailFullwidth = ({ product }) => {
     return (
@@ -15,14 +17,17 @@ const ProductDetailFullwidth = ({ product }) => {
                 <ThumbnailDefault product={product} />
                 <div className="ps-product__info">
                     <ModuleDetailTopInformation product={product} />
-                    <ModuleProductDetailDescription product={product} />
+                    <ModuleProductDetailSpecification product={product}/>
+                    {/* <ModuleProductDetailDescription product={product} /> */}
                     <ModuleDetailShoppingActions product={product} />
-                    <ModuleProductDetailSpecification />
                     <ModuleProductDetailSharing />
+                    <ModuleProductSafeCheckout/>
                     <ModuleDetailActionsMobile product={product} />
                 </div>
             </div>
             <DefaultDescription />
+
+            <FeaturedListTen/>
         </div>
     );
 };

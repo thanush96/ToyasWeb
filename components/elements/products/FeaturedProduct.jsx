@@ -16,7 +16,7 @@ const FeaturedProduct = ({ product, index }) => {
             className={`Product item${index + 1}`}
             style={{
                 border: '1px solid #c8c8c8',
-                margin: '0 10px',
+                margin: '10px',
                 padding: '10px',
                 borderRadius : "6px"
             }}>

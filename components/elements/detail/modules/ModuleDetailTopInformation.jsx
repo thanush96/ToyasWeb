@@ -18,7 +18,6 @@ const ModuleDetailTopInformation = ({ product }) => {
     }
     return (
         <header>
-            <h1>{product.title}</h1>
             <div className="ps-product__meta">
                 {/* <p>
                     Brand:
@@ -28,12 +27,16 @@ const ModuleDetailTopInformation = ({ product }) => {
                 </p> */}
                 <div className="ps-product__rating">
                     <Rating />
-                    <span/>
+                    <span />
                     (4.7 Start Rating)
-                    <span>(21.9226)</span>
+                    <span>(21.9226 User Feedback)</span>
                 </div>
             </div>
-            {priceView}
+            <h1>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                elusmod tempor incididunt ut labore et dolore
+            </h1>
+            {/* <h1>{product.title}</h1> */}
         </header>
     );
 };

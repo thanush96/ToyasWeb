@@ -6,7 +6,7 @@ const Newsletters = ({ layout }) => (
         <div className={layout && layout === 'container' ? 'container' : 'ps-container'}>
             <div className="newsletter-content">
                 <div className="newsletter-image">
-                    <Image src="/static/img/categories/images/m1.png" alt="Newsletter Background" layout="fill" objectFit="cover" />
+                    <Image src="/static/img/categories/images/mail.png" alt="Newsletter Background" layout="fill" objectFit="cover" />
                 </div>
                 <div className="newsletter-text">
                     <h3>Subscribe our newsletter to get latest news.</h3>

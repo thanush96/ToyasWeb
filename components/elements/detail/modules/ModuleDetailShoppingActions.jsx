@@ -71,7 +71,7 @@ const ModuleDetailShoppingActions = ({
         return (
             <div className="ps-product__shopping">
                 <figure>
-                    <figcaption>Quantity</figcaption>
+                    {/* <figcaption>Quantity</figcaption> */}
                     <div className="form-group--number">
                         <button
                             className="up"
@@ -92,22 +92,27 @@ const ModuleDetailShoppingActions = ({
                     </div>
                 </figure>
                 <a
-                    className="ps-btn ps-btn--black"
+                    className="ps-btn ps-btn--black extra-padding"
                     href="#"
                     onClick={(e) => handleAddItemToCart(e)}>
-                    Add to cart
+                    ADD TO CART{' '}
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                 </a>
-                <a className="ps-btn" href="#" onClick={(e) => handleBuynow(e)}>
-                    Buy Now
+                <a
+                    className="ps-btn ps-btn--outline"
+                    href="#"
+                    onClick={(e) => handleBuynow(e)}>
+                    BUY NOW
                 </a>
-                <div className="ps-product__actions">
-                    <a href="#" onClick={(e) => handleAddItemToWishlist(e)}>
-                        <i className="icon-heart"></i>
-                    </a>
-                    {/* <a href="#" onClick={(e) => handleAddItemToCompare(e)}>
-                        <i className="icon-chart-bars"></i>
-                    </a> */}
-                </div>
+
+                {/* <div className="ps-product__actions">
+                        <a href="#" onClick={(e) => handleAddItemToWishlist(e)}>
+                            <i className="icon-heart"></i>
+                        </a>
+                        <a href="#" onClick={(e) => handleAddItemToCompare(e)}>
+                            <i className="icon-chart-bars"></i>
+                        </a>
+                    </div> */}
             </div>
         );
     } else {
@@ -136,22 +141,25 @@ const ModuleDetailShoppingActions = ({
                         </div>
                     </figure>
                     <a
-                        className="ps-btn ps-btn--black"
+                        className="ps-btn ps-btn--black extra-padding"
                         href="#"
                         onClick={(e) => handleAddItemToCart(e)}>
-                        Add to cart
+                        ADD TO CART
                     </a>
-                    <div className="ps-product__actions">
+                    {/* <div className="ps-product__actions">
                         <a href="#" onClick={(e) => handleAddItemToWishlist(e)}>
                             <i className="icon-heart"></i>
                         </a>
-                        {/* <a href="#" onClick={(e) => handleAddItemToCompare(e)}>
+                        <a href="#" onClick={(e) => handleAddItemToCompare(e)}>
                             <i className="icon-chart-bars"></i>
-                        </a> */}
-                    </div>
+                        </a>
+                    </div> */}
                 </div>
-                <a className="ps-btn" href="#" onClick={(e) => handleBuynow(e)}>
-                    Buy Now
+                <a
+                    className="ps-btn ps-btn--outline"
+                    href="#"
+                    onClick={(e) => handleBuynow(e)}>
+                    BUY NOW
                 </a>
             </div>
         );
