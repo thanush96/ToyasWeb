@@ -71,7 +71,11 @@ const ProductDealOfDay = ({ product, index }) => {
                         </div>
                     </div>
 
-                    <p style={{ maxWidth: '300px', wordWrap: 'break-word' }}>
+                    <p
+                        style={{
+                            maxWidth: '300px',
+                            wordWrap: 'break-word',
+                        }}>
                         {product.description}
                     </p>
 
@@ -96,7 +100,11 @@ const ProductDealOfDay = ({ product, index }) => {
                 <div className="product-details">
                     {product.rating ? <Rating /> : null}
 
-                    <p style={{ maxWidth: '200px', wordWrap: 'break-word' }}>
+                    <p
+                        style={{
+                            maxWidth: '200px',
+                            wordWrap: 'break-word',
+                        }}>
                         {product.title}
                     </p>
 

@@ -1,5 +1,5 @@
 import React from 'react';
- 
+
 const ProductCard = () => {
     return (
         <div className="product-card">
@@ -14,12 +14,11 @@ const ProductCard = () => {
                 <span className="product-price">$299 USD</span>
             </div>
             <button className="product-add-to-cart">
-                <span className="cart-icon">🛒</span>
-                ADD TO CART
+                <span className="cart-icon"></span>
+                ADD TO CART &nbsp;
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
             </button>
-            <button className="product-view-details">
-                VIEW DETAILS →
-            </button>
+            <button className="product-view-details">VIEW DETAILS →</button>
         </div>
     );
 };

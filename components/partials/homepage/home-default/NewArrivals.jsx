@@ -59,10 +59,10 @@ const productData = [
         id: 5,
         title: 'Product 5',
         price: '$1200',
-        status: "hot",
+        status: 'hot',
         discount: null,
         image: '/static/img/categories/images/d5.png',
-    }
+    },
 ];
 
 const NewArrivals = () => {
@@ -73,7 +73,7 @@ const NewArrivals = () => {
                     {/* Discount Banner Section */}
                     <div className="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 discount-banner">
                         <div className="discount-content">
-                            <div className='top'>
+                            <div className="top">
                                 <h3>Toys Lorem Ipsum</h3>
                                 <h2>32% Discount</h2>
                                 <p>For all Toys Products</p>
