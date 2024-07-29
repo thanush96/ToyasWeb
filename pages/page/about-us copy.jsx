@@ -6,7 +6,6 @@ import AboutAwards from '~/components/partials/page/about-us/AboutAwards';
 import FooterDefault from '~/components/shared/footers/FooterDefault';
 import Newletters from '~/components/partials/commons/Newletters';
 import PageContainer from '~/components/layouts/PageContainer';
-import PopularBrand from '~/components/elements/skeletons/PopularBrand';
 
 const AboutUsPage = () => {
     const breadCrumb = [
@@ -21,11 +20,10 @@ const AboutUsPage = () => {
     return (
         <PageContainer footer={<FooterDefault />} title="About Us">
             <div className="ps-page--single">
-                {/* <img src="/static/img/bg/about-us.jpg" alt="" /> */}
-                {/* <BreadCrumb breacrumb={breadCrumb} /> */}
+                <img src="/static/img/bg/about-us.jpg" alt="" />
+                <BreadCrumb breacrumb={breadCrumb} />
                 <OurTeam />
-                <PopularBrand/>
-                {/* <AboutAwards /> */}
+                <AboutAwards />
             </div>
             <Newletters layout="container" />
         </PageContainer>

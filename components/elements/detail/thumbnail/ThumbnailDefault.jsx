@@ -21,13 +21,20 @@ const ThumbnailDefault = ({ product, vertical = true }) => {
     };
 
     useEffect(() => {
-        let images = [];
-        if (product && product.images.length > 0) {
-            product.images.map((item) => {
-                images.push(`${baseUrl}${item.url}`);
-            });
+        let images = [
+            '/static/img/categories/1.png',
+            '/static/img/categories/2.png',
+            '/static/img/categories/3.png',
+            '/static/img/categories/4.png',
+        ];
+
+        console.warn('product', product);
+        // if (product && product.images.length > 0) {
+        //     product.images.map((item) => {
+        //         images.push(`${baseUrl}${item.url}`);
+        //     });
             setProductImages(images);
-        }
+        // }
         setGallery(galleryCarousel.current);
         setVariant(variantCarousel.current);
     }, [product]);
