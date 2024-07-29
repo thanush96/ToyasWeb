@@ -14,36 +14,36 @@ const AboutUsList = () => {
                 <div className="listItem">
                     <img src="/static/img/categories/images/icon png/1.png" className="icon" alt="Quality Icon" />
                     <div className="listContent">
-                        <h3>Quality</h3>
-                        <p>We uphold the highest standards in the toys and games we offer.</p>
+                        <div>Quality</div>
+                        <span>We uphold the highest standards in the toys and games we offer.</span>
                     </div>
                 </div>
                 <div className="listItem">
                     <img src="/static/img/categories/images/icon png/2.png" className="icon" alt="Innovation Icon" />
                     <div className="listContent">
-                        <h3>Innovation</h3>
-                        <p>We seek out the latest trends and innovations to delight our customers.</p>
+                        <div>Innovation</div>
+                        <span>We seek out the latest trends and innovations to delight our customers.</span>
                     </div>
                 </div>
                 <div className="listItem">
                     <img src="/static/img/categories/images/icon png/3.png" className="icon" alt="Customer Satisfaction Icon" />
                     <div className="listContent">
-                        <h3>Customer Satisfaction</h3>
-                        <p>We prioritize customer satisfaction and strive to exceed expectations in every interaction.</p>
+                        <div>Customer Satisfaction</div>
+                        <span>We prioritize customer satisfaction and strive to exceed expectations in every interaction.</span>
                     </div>
                 </div>
                 <div className="listItem">
                     <img src="/static/img/categories/images/icon png/4.png" className="icon" alt="Creativity Icon" />
                     <div className="listContent">
-                        <h3>Creativity</h3>
-                        <p>We celebrate the diverse imaginations of children and inspire creativity through our products.</p>
+                        <div>Creativity</div>
+                        <span>We celebrate the diverse imaginations of children and inspire creativity through our products.</span>
                     </div>
                 </div>
                 <div className="listItem">
                     <img src="/static/img/categories/images/icon png/5.png" className="icon" alt="Community Icon" />
                     <div className="listContent">
-                        <h3>Community</h3>
-                        <p>We are committed to building a supportive and inclusive community of families who share our passion for play.</p>
+                        <div>Community</div>
+                        <span>We are committed to building a supportive and inclusive community of families who share our passion for play.</span>
                     </div>
                 </div>
             </div>

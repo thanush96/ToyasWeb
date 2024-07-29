@@ -15,8 +15,9 @@ const CustomPagination = () => {
                 </li>
                 <li>
                     <a href="#">
-                        Next Page
-                        <i className="icon-chevron-right"></i>
+                        {/* Next Page */}
+                        {/* <i className="icon-chevron-right"></i> */}
+                        <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </li>
             </ul>

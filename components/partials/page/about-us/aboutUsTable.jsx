@@ -46,8 +46,8 @@ const AboutUsTable = () => {
                             <div className="item" key={index}>
                                 <img src={item.image} alt={item.title} className="itemImage" />
                                 <div className="itemDetails">
-                                    <h4 className="itemTitle">{item.title}</h4>
-                                    <p className="itemPrice">{item.price}</p>
+                                    <span className="itemTitle">{item.title}</span>
+                                    <span className="itemPrice">{item.price}</span>
                                 </div>
                             </div>
                         ))}

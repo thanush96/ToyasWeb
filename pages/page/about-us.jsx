@@ -11,7 +11,6 @@ import AboutUs from '~/components/partials/page/about-us/AboutUs';
 import AboutUsList from '~/components/partials/page/about-us/AboutUsList';
 import AboutUsTable from '~/components/partials/page/about-us/AboutUsTable';
 
-
 const AboutUsPage = () => {
     const breadCrumb = [
         {
@@ -23,14 +22,14 @@ const AboutUsPage = () => {
         },
     ];
     return (
-        <PageContainer footer={<FooterDefault />} title="About Us">
+        <PageContainer title="About Us">
             <div className="ps-page--single">
                 {/* <img src="/static/img/bg/about-us.jpg" alt="" /> */}
                 {/* <BreadCrumb breacrumb={breadCrumb} /> */}
                 <AboutUs />
                 <AboutUsList />
                 <AboutUsTable />
-                <PopularBrand/>
+                <PopularBrand />
                 {/* <OurTeam /> */}
                 {/* <AboutAwards /> */}
             </div>

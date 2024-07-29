@@ -22,6 +22,7 @@
             color: $color-heading;
             vertical-align: middle;
             font-size: 14px;
+            border-radius: 50%;
 
             i {
                 font-size: 10px;
@@ -39,6 +40,7 @@
             a {
                 background-color: $color-1st;
                 color: $color-heading;
+                border-radius: 50%;
             }
         }
 
@@ -46,8 +48,6 @@
             margin-right: 0;
         }
     }
-
-
 }
 
 .ps-pagination {
@@ -56,7 +56,8 @@
     @include clearfix;
 
     .ant-pagination {
-        .ant-pagination-prev, .ant-pagination-next {
+        .ant-pagination-prev,
+        .ant-pagination-next {
             .ant-pagination-item-link {
                 display: flex;
                 justify-content: center;
