@@ -29,6 +29,21 @@ const ProductListing = () => {
                         <option>Customer Reviews</option>
                         <option>Newest Arrivals</option>
                     </select>
+            <div className="filter-bar-new">
+                <div className="active-filters-new">
+                    <span>Active Filters:</span>
+                    <span>Electronics Devices ✖️</span>
+                    <span>5 Star Rating ✖️</span>
+                </div>
+                <div className="sort-bar-new">
+                    <span>Sort by:</span>
+                    <select>
+                        <option>Most Popular</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Customer Reviews</option>
+                        <option>Newest Arrivals</option>
+                    </select>
                 </div>
             </div>
             <div className="results-count-new">652 Results found.</div>
@@ -40,4 +55,5 @@ const ProductListing = () => {
     );
 };
 
+export default ProductListing;
 export default ProductListing;

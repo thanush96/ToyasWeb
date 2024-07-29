@@ -4376,225 +4376,35 @@
     color: #999;
     margin-right: 5px;
 }
- 
 
+// .pagination-new {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin-top: 20px;
+//     gap: 10px;
+// }
 
+// .pagination-button-new {
+//     padding: 10px;
+//     border: 1px solid #ddd;
+//     background-color: #fff;
+//     cursor: pointer;
+//     border-radius: 50%;
+//     width: 40px;
+//     height: 40px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
 
-// aboutUs.module.scss styls
-.aboutUs {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
+// .pagination-button-new:hover {
+//     background-color: #007bff;
+//     color: #fff;
+// }
 
-.textSection {
-    max-width: 50%;
-}
-
-.textSection .title {
-    font-size: 2.5rem; /* Increased font size */
-    margin-bottom: 1rem;
-    color: #333;
-}
-
-.textSection .description {
-    font-size: 1.25rem; /* Increased font size */
-    line-height: 1.5;
-    color: #666;
-    margin-bottom: 1rem;
-}
-
-.textSection .mission {
-    font-weight: bold;
-    color: #000;
-}
-
-.image {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.listSection {
-    flex: 1;
-    padding: 20px;
-}
-
-.listItem {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.icon {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-}
-
-.listContent h3 {
-    font-size: 12rem; /* Increased font size */
-    margin-bottom: 5px;
-}
-
-.listContent p {
-    font-size: 1.25rem; /* Increased font size */
-}
-
-.imageSection {
-    max-width: 40%;
-}
-
-.imageSection img {
-    max-width: 100%;
-    height: auto;
-}
-
-.shopNow {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 5px;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    font-family: 'Arial', sans-serif;
-    font-size: 18px; /* Increased font size */
-    position: relative;
-    transition: background-color 0.3s ease;
-}
-
-.shopNow:hover {
-    background-color: #333;
-}
-
-
-//aboutUsList styles
-
-.aboutUsList {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-}
-
-.textSection {
-    max-width: 40%;
-}
-
-.textSection .title {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #333;
-}
-
-.textSection .image {
-    margin-top: 20px;
-}
-
-.textSection .image img {
-    max-width: 100%;
-    height: auto;
-}
-
-.listSection {
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.listItem {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
-}
-
-.listItem .icon {
-    font-size: 1.5rem;
-    margin-right: 10px;
-    color: #ffcc00;
-}
-
-.listContent h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    color: #333;
-}
-
-.listContent p {
-    font-size: 1rem;
-    color: #666;
-}
-
-
-// aboutUsTable styles
-
-.aboutUsTable {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 40px;
-    margin-bottom: 50px;
-
-}
-
-.category {
-    flex: 1;
-    min-width: 250px;
-    max-width: 300px;
-}
-
-.categoryTitle {
-    font-size: 1.5rem;
-    margin-bottom: 50px;
-}
-
-.items {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.item {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.itemImage {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    margin-right: 10px;
-    border-radius: 8px;
-}
-
-.itemDetails {
-    display: flex;
-    flex-direction: column;
-}
-
-.itemTitle {
-    font-size: 1rem;
-    margin-bottom: 5px;
-}
-
-.itemPrice {
-    font-size: 1rem;
-    font-weight: bold;
-}
-
+// .pagination-button-new.active {
+//     background-color: #ffcc00;
+//     color: #000;
+//     font-weight: bold;
+// }
