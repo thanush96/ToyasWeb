@@ -39,6 +39,7 @@ const ShopDefaultPage = () => {
                             <WidgetShopFilterByPriceRange />
                             <WidgetShopBrands />
                             <ProductCard/>
+ 
                         </div>
                         <div className="ps-layout__right">
                             <ProductGroupByCarousel
