@@ -86,7 +86,7 @@ const FooterWidgets = () => (
             <h4 className="widget-title">Pages</h4>
             <ul className="ps-list--link">
                 <li>
-                    <Link href="/page/who-we-are">
+                    <Link href="/page/about-us">
                         <a>Who we are</a>
                     </Link>
                 </li>

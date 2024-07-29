@@ -7,6 +7,10 @@ import FooterDefault from '~/components/shared/footers/FooterDefault';
 import Newletters from '~/components/partials/commons/Newletters';
 import PageContainer from '~/components/layouts/PageContainer';
 import PopularBrand from '~/components/elements/skeletons/PopularBrand';
+import AboutUs from '~/components/partials/page/about-us/AboutUs';
+import AboutUsList from '~/components/partials/page/about-us/AboutUsList';
+import AboutUsTable from '~/components/partials/page/about-us/AboutUsTable';
+
 
 const AboutUsPage = () => {
     const breadCrumb = [
@@ -23,8 +27,11 @@ const AboutUsPage = () => {
             <div className="ps-page--single">
                 {/* <img src="/static/img/bg/about-us.jpg" alt="" /> */}
                 {/* <BreadCrumb breacrumb={breadCrumb} /> */}
-                <OurTeam />
+                <AboutUs />
+                <AboutUsList />
+                <AboutUsTable />
                 <PopularBrand/>
+                {/* <OurTeam /> */}
                 {/* <AboutAwards /> */}
             </div>
             <Newletters layout="container" />
