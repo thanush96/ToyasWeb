@@ -5,27 +5,40 @@ import { Result } from 'antd';
 import ProductCart from '~/components/elements/products/ProductCart';
 
 const ModuleEcomerceCartItems = ({ ecomerce, cartItems }) => {
+    let cartItem = [
+        {
+            title: 'Apple TV 4k - 32 GB (4th Generation)',
+            featured: false,
+            sale: false,
+            price: 36.99,
+            sale_price: 0,
+            productId: 10,
+            quantity: 10,
+        },
+    ];
+
+    console.warn('cartItem', cartItem);
     const { increaseQty, decreaseQty, removeItem } = useEcomerce();
 
     function handleRemoveItem(e, productId) {
         e.preventDefault();
-        removeItem({ id: productId }, ecomerce.cartItems, 'cart');
+        removeItem({ id: productId }, ecomerce.cartItem, 'cart');
     }
 
     function handleIncreaseItemQty(e, productId) {
         e.preventDefault();
-        increaseQty({ id: productId }, ecomerce.cartItems);
+        increaseQty({ id: productId }, ecomerce.cartItem);
     }
 
     function handleDecreaseItemQty(e, productId) {
         e.preventDefault();
-        decreaseQty({ id: productId }, ecomerce.cartItems);
+        decreaseQty({ id: productId }, ecomerce.cartItem);
     }
 
     // View
     let cartItemsViews;
-    if (cartItems && cartItems.length > 0) {
-        const items = cartItems.map((item) => (
+    if (cartItem && cartItem.length > 0) {
+        const items = cartItem.map((item) => (
             <tr key={item.id}>
                 <td>
                     <ProductCart product={item} />

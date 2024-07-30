@@ -30,8 +30,8 @@ const ShoppingCartScreen = ({ ecomerce }) => {
 
     // View
     let contentView;
-    if (products) {
-        if (products.length > 0) {
+    // if (products) {
+    //     if (products.length > 0) {
             contentView = (
                 <>
                     <div className="ps-section__content">
@@ -79,27 +79,27 @@ const ShoppingCartScreen = ({ ecomerce }) => {
                     </div>
                 </>
             );
-        } else {
-            contentView = (
-                <>
-                    <div className="ps-section__content">
-                        <div className="alert alert-info">
-                            <p className="mb-0">
-                                Your cart is currently empty.
-                            </p>
-                        </div>
+    //     } else {
+    //         contentView = (
+    //             <>
+    //                 <div className="ps-section__content">
+    //                     <div className="alert alert-info">
+    //                         <p className="mb-0">
+    //                             Your cart is currently empty.
+    //                         </p>
+    //                     </div>
 
-                        <div className="ps-section__cart-actions">
-                            <Link href="/shop">
-                                <a className="ps-btn">Back to Shop</a>
-                            </Link>
-                        </div>
-                    </div>
-                </>
-            );
-        }
-    } else {
-    }
+    //                     <div className="ps-section__cart-actions">
+    //                         <Link href="/shop">
+    //                             <a className="ps-btn">Back to Shop</a>
+    //                         </Link>
+    //                     </div>
+    //                 </div>
+    //             </>
+    //         );
+    //     }
+    // } else {
+    // }
 
     return (
         <>
