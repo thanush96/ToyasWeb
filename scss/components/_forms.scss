@@ -666,3 +666,136 @@
         }
     }
 }
+
+
+// new style for checkout 
+.ps-form__billing-info {
+    .ps-form__heading {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-top: 50px;
+        text-align: left;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+
+        .form-control {
+            width: 100%;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #555;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+
+        .col-sm-6, .col-sm-4 {
+            padding: 0 15px;
+            margin-bottom: 20px;
+
+            .form-group {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .ps-form__submit {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+
+        a {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #333;
+            text-decoration: none;
+
+            .icon-arrow-left {
+                margin-right: 5px;
+                font-size: 16px;
+            }
+        }
+            
+        .ps-btn1 {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #40a9ff;
+            }
+        }
+    }
+
+    .ps-form__heading {
+        font-size: 24px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+    
+    .payment-option-container {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    
+    .payment-option {
+        display: inline-table;
+        align-items: center;
+        cursor: pointer;
+        padding: 40px;
+        border: 1px solid #e6e6e6;
+        border-radius: 4px;
+        transition: border 0.3s ease;
+        
+        &:hover {
+            border-color: #ff6600;
+        }
+    
+        img {
+            width: 70px;
+            height: 70px;
+            margin-right: 10px;
+        }
+    
+        span {
+            font-size: 16px;
+            font-weight: bold;
+        }
+    
+        input[type="radio"] {
+            display: none;
+        }
+    
+        input[type="radio"]:checked + img {
+            border: 2px solid #ff6600;  
+            border-radius: 50%;
+        }
+    
+        input[type="radio"]:checked + span {
+            color: #ff6600;  
+        }
+    }
+    
+    .ps-form__submit {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+}    

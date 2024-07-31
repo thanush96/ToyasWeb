@@ -7,7 +7,7 @@ import ProductCart from '~/components/elements/products/ProductCart';
 const ModuleEcomerceCartItems = ({ ecomerce, cartItems }) => {
     let cartItem = [
         {
-            title: 'Apple TV 4k - 32 GB (4th Generation)',
+            title: 'Lorem Ipsum Dolar',
             featured: false,
             sale: false,
             price: 36.99,

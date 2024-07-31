@@ -21,7 +21,7 @@ h6 {
     color: $color-heading;
     margin-top: 0;
     margin-bottom: 10px;
-    font-weight: 700;
+   
 
     a {
         color: inherit;
@@ -45,7 +45,9 @@ h4 {
 }
 
 h5 {
-    font-size: 14px;
+    font-size: 16px;
+    text-align: left;
+ 
 }
 
 h6 {
@@ -56,6 +58,8 @@ p {
     font-size: 1.4rem;
     line-height: 1.6em;
     color: $color-text;
+    text-align: left;
+
 
     span {
         font-family: inherit;

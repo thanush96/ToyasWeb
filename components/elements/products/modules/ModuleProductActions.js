@@ -46,7 +46,7 @@ const ModuleProductActions = ({ product, ecomerce }) => {
     };
     return (
         <ul className="ps-product__actions">
-            {/* <li>
+            <li>
                 <a
                     href="#"
                     data-toggle="tooltip"
@@ -55,7 +55,7 @@ const ModuleProductActions = ({ product, ecomerce }) => {
                     onClick={handleAddItemToCart}>
                     <i className="icon-bag2"></i>
                 </a>
-            </li> */}
+            </li>
             <li>
                 <a
                     href="#"

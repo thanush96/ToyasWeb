@@ -17,8 +17,7 @@ const Checkout = () => {
                                 </div>
                                 <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12  ps-block--checkout-order">
                                     <div className="ps-form__orders">
-                                        <h3>Your order</h3>
-                                        <ModulePaymentOrderSummary />
+                                         <ModulePaymentOrderSummary />
                                     </div>
                                 </div>
                             </div>
