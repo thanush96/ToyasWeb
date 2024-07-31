@@ -1,12 +1,12 @@
 import React from 'react';
 
 // import BreadCrumb from '~/components/elements/BreadCrumb';
-import AboutUs from '~/components/partials/page/about-us/AboutUs';
-import AboutUsList from '~/components/partials/page/about-us/AboutUsList';
-import AboutUsTable from '~/components/partials/page/about-us/AboutUsTable';
 import Newletters from '~/components/partials/commons/Newletters';
 import PageContainer from '~/components/layouts/PageContainer';
-import PopularBrand from '~/components/elements/skeletons/PopularBrand';
+// import PopularBrand from '~/components/elements/skeletons/PopularBrand';
+// import AboutUs from '~/components/partials/page/about-us/AboutUs';
+// import AboutUsList from '~/components/partials/page/about-us/AboutUsList';
+// import AboutUsTable from '~/components/partials/page/about-us/AboutUsTable';
 
 
 const AboutUsPage = () => {
@@ -24,10 +24,10 @@ const AboutUsPage = () => {
             <div className="ps-page--single">
                 {/* <img src="/static/img/bg/about-us.jpg" alt="" /> */}
                 {/* <BreadCrumb breacrumb={breadCrumb} /> */}
-                <AboutUs />
+                {/* <AboutUs />
                 <AboutUsList />
                 <AboutUsTable />
-                <PopularBrand />
+                <PopularBrand /> */}
                 {/* <OurTeam /> */}
                 {/* <AboutAwards /> */}
             </div>
