@@ -1,12 +1,13 @@
 import React from 'react';
 
 // import BreadCrumb from '~/components/elements/BreadCrumb';
-import Newletters from '~/components/partials/commons/Newletters';
-import PageContainer from '~/components/layouts/PageContainer';
-import PopularBrand from '~/components/elements/skeletons/PopularBrand';
 import AboutUs from '~/components/partials/page/about-us/AboutUs';
 import AboutUsList from '~/components/partials/page/about-us/AboutUsList';
 import AboutUsTable from '~/components/partials/page/about-us/AboutUsTable';
+import Newletters from '~/components/partials/commons/Newletters';
+import PageContainer from '~/components/layouts/PageContainer';
+import PopularBrand from '~/components/elements/skeletons/PopularBrand';
+
 
 const AboutUsPage = () => {
     // const breadCrumb = [
