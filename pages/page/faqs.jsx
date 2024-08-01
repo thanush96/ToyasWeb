@@ -17,7 +17,7 @@ const FaqsPage = () => {
     ];
 
     return (
-        <PageContainer footer={<FooterDefault />} title="FAQ page">
+        <PageContainer   title="FAQ page">
             <div className="ps-page--single">
                 <BreadCrumb breacrumb={breadCrumb} />
                 <div className="container">

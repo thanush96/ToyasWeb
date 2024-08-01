@@ -5,7 +5,7 @@ import FooterDefault from '~/components/shared/footers/FooterDefault';
 
 const Page404 = () => {
     return (
-        <PageContainer footer={<FooterDefault />} title="Page not found.">
+        <PageContainer   title="Page not found.">
             <div className="ps-page--404">
                 <div className="container">
                     <div className="ps-section__content">

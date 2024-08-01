@@ -71,7 +71,7 @@ const ProductCategoryScreen = () => {
 
     return (
         <PageContainer
-            footer={<FooterDefault />}
+             
             title={category ? category.name : 'Category'}
             boxed={true}>
             <div className="ps-page--shop">

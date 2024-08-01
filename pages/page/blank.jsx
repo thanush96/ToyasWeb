@@ -17,7 +17,7 @@ const BlankPage = () => {
     ];
 
     return (
-        <PageContainer footer={<FooterDefault />} title="Blank page">
+        <PageContainer   title="Blank page">
             <div className="ps-page--single">
                 <BreadCrumb breacrumb={breadCrumb} layout="fullwidth" />
                 <BlankContent />

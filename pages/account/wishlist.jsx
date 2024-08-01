@@ -17,7 +17,7 @@ const WishlistPage = () => {
     ];
 
     return (
-        <PageContainer footer={<FooterDefault />} title="Wishlist">
+        <PageContainer title="Wishlist">
             <div className="ps-page--simple">
                 <BreadCrumb breacrumb={breadCrumb} />
                 <Wishlist />

@@ -18,7 +18,7 @@ const LoginPage = () => {
     ];
     return (
         <>
-            <PageContainer footer={<FooterDefault />} title="Login">
+            <PageContainer   title="Login">
                 <div className="ps-page--my-account">
                     <BreadCrumb breacrumb={breadCrumb} />
                     <Login />

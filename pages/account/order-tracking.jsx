@@ -17,7 +17,7 @@ const OrderTrackingPage = () => {
     ];
     return (
         <>
-            <PageContainer footer={<FooterDefault />} title="Order Tracking">
+            <PageContainer title="Order Tracking">
                 <div className="ps-page--simple">
                     <BreadCrumb breacrumb={breadCrumb} />
                     <OrderTracking />

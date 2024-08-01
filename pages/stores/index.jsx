@@ -17,7 +17,7 @@ const StoreListPage = () => {
     ];
 
     return (
-        <PageContainer footer={<FooterDefault />} title="Store list">
+        <PageContainer   title="Store list">
             <div className="ps-page--single ps-page--vendor">
                 <BreadCrumb breacrumb={breadCrumb} />
                 <section className="ps-store-list">

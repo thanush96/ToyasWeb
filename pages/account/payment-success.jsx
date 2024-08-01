@@ -23,7 +23,7 @@ const PaymentSuccessPage = () => {
 
     return (
         <>
-            <PageContainer footer={<FooterDefault />} title="Payment">
+            <PageContainer title="Payment">
                 <div className="ps-page--simple">
                     <BreadCrumb breacrumb={breadCrumb} />
                     <div className="ps-checkout ps-section--shopping">

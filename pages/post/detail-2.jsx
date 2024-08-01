@@ -9,7 +9,7 @@ import Newletters from '~/components/partials/commons/Newletters';
 
 const PostDetailScreen2 = () => {
     return (
-        <PageContainer footer={<FooterDefault />} title="Post Detail 2">
+        <PageContainer   title="Post Detail 2">
             <PostDetail />
             <div className="container">
                 <RelatedPosts />

@@ -22,7 +22,7 @@ const ShopSidebarPage = () => {
     ];
     return (
         <>
-            <PageContainer footer={<FooterDefault />} title="Shop Sidebar">
+            <PageContainer   title="Shop Sidebar">
                 <BreadCrumb breacrumb={breadCrumb} />
                 <div className="ps-page--shop" id="shop-sidebar">
                     <div className="container">

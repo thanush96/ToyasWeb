@@ -19,7 +19,7 @@ const RegisterPage = () => {
 
     return (
         <>
-            <PageContainer footer={<FooterDefault />} title="Register">
+            <PageContainer title="Register">
                 <div className="ps-page--my-account">
                     <BreadCrumb breacrumb={breadCrumb} />
                     <Register />

@@ -8,7 +8,7 @@ import RelatedPosts from '~/components/partials/post/RelatedPosts';
 
 const PostDetailDynamic = () => {
     return (
-        <PageContainer footer={<FooterDefault />} title="Post Detail">
+        <PageContainer   title="Post Detail">
             <PostDetailBackground />
             <div className="container">
                 <RelatedPosts />

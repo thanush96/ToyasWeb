@@ -28,7 +28,7 @@ const ShippingPage = () => {
 
     return (
         <>
-            <PageContainer footer={<FooterDefault />} title="Shipping">
+            <PageContainer title="Shipping">
                 <div className="ps-page--simple">
                     <BreadCrumb breacrumb={breadCrumb} />
                     <Shipping />

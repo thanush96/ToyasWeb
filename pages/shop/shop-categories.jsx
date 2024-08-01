@@ -21,7 +21,7 @@ const ShopCategoriesPage = () => {
         },
     ];
     return (
-        <PageContainer footer={<FooterDefault />} title="Shop Categories">
+        <PageContainer   title="Shop Categories">
             <div className="ps-page--shop" id="shop-categories">
                 <BreadCrumb breacrumb={breadCrumb} />
                 <div className="container">

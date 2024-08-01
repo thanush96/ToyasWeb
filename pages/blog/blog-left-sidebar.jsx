@@ -22,7 +22,7 @@ const BlogLeftSidebarPage = () => {
     ];
 
     return (
-        <PageContainer footer={<FooterDefault />} title="Blog Left Sidebar">
+        <PageContainer   title="Blog Left Sidebar">
             <div className="ps-page--blog">
                 <div className="container">
                     <div className="ps-page__header">

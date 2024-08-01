@@ -19,7 +19,7 @@ const ContactUsPage = () => {
     ];
 
     return (
-        <PageContainer footer={<FooterDefault />} title="Contact Us">
+        <PageContainer   title="Contact Us">
             <div className="ps-page--single" id="contact-us">
                 <BreadCrumb breacrumb={breadCrumb} />
                 <ContactMap />
