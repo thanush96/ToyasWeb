@@ -41,7 +41,8 @@ class FormCheckoutInformation extends Component {
                                         rules={[
                                             {
                                                 required: true,
-                                                message: 'Enter your first name!',
+                                                message:
+                                                    'Enter your first name!',
                                             },
                                         ]}>
                                         <Input
@@ -57,7 +58,8 @@ class FormCheckoutInformation extends Component {
                                         rules={[
                                             {
                                                 required: true,
-                                                message: 'Enter your last name!',
+                                                message:
+                                                    'Enter your last name!',
                                             },
                                         ]}>
                                         <Input
@@ -98,7 +100,8 @@ class FormCheckoutInformation extends Component {
                                 rules={[
                                     {
                                         required: true,
-                                        message: 'Enter your flat/villa number!',
+                                        message:
+                                            'Enter your flat/villa number!',
                                     },
                                 ]}>
                                 <Input
@@ -114,7 +117,8 @@ class FormCheckoutInformation extends Component {
                                 rules={[
                                     {
                                         required: true,
-                                        message: 'Enter your building name/number!',
+                                        message:
+                                            'Enter your building name/number!',
                                     },
                                 ]}>
                                 <Input
@@ -195,7 +199,9 @@ class FormCheckoutInformation extends Component {
                                 <Select
                                     className="form-control"
                                     placeholder="Select Region/State">
-                                    <Option value="california">California</Option>
+                                    <Option value="california">
+                                        California
+                                    </Option>
                                     <Option value="texas">Texas</Option>
                                     <Option value="newYork">New York</Option>
                                     {/* Add more regions/states as needed */}
@@ -203,7 +209,7 @@ class FormCheckoutInformation extends Component {
                             </Form.Item>
                         </div>
                     </div>
-                    <div className="col-sm-4">
+                    <div className="col-sm-3">
                         <div className="form-group">
                             <h5>City</h5>
                             <Form.Item
@@ -217,15 +223,19 @@ class FormCheckoutInformation extends Component {
                                 <Select
                                     className="form-control"
                                     placeholder="Select City">
-                                    <Option value="losAngeles">Los Angeles</Option>
+                                    <Option value="losAngeles">
+                                        Los Angeles
+                                    </Option>
                                     <Option value="houston">Houston</Option>
-                                    <Option value="newYorkCity">New York City</Option>
+                                    <Option value="newYorkCity">
+                                        New York City
+                                    </Option>
                                     {/* Add more cities as needed */}
                                 </Select>
                             </Form.Item>
                         </div>
                     </div>
-                    <div className="col-sm-2">
+                    <div className="col-sm-3">
                         <div className="form-group">
                             <h5>Zip Code</h5>
                             <Form.Item
@@ -288,50 +298,67 @@ class FormCheckoutInformation extends Component {
                     </Checkbox>
                 </div>
 
-                <h3 className="ps-form__heading">Payment Option</h3>
-                <Radio.Group onChange={this.handlePaymentMethodChange} value={paymentMethod}>
-                    <div className="payment-option">
-                        <Radio value="cashOnDelivery">
-                            <img src="/static/img/categories/images/icon png/c1.png" alt="Cash on Delivery" />
-                            <span>Cash on Delivery</span>
-                        </Radio>
-                    </div>
-                    <div className="payment-option">
-                        <Radio value="debitCreditCard">
-                            <img src="/static/img/categories/images/icon png/c2.png" alt="Debit/Credit Card" />
-                            <span>Debit/Credit Card</span>
-                        </Radio>
-                    </div>
-                </Radio.Group>
-                {paymentMethod === 'debitCreditCard' && (
-                    <>
-                        <h5>Name on Card</h5>
-                        <Form.Item name="nameOnCard">
-                            <Input placeholder="Name on Card" />
-                        </Form.Item>
-                        <h5>Card Number</h5>
-                        <Form.Item name="cardNumber">
-                            <Input placeholder="Card Number" />
-                        </Form.Item>
-                        <div className="row">
-                            <div className="col-sm-6">
-                                <h5>Expire Date</h5>
-                                <Form.Item name="expiryDate">
-                                    <Input placeholder="Expire Date (MM/YY)" />
-                                </Form.Item>
+                <div className="payment_option">
+                    <h3 className="ps-form__heading">Payment Option</h3>
+
+                    <div className="ps-form__body">
+                        <Radio.Group
+                            onChange={this.handlePaymentMethodChange}
+                            value={paymentMethod}>
+                            <div className="payment-option">
+                                <Radio value="cashOnDelivery">
+                                    <img
+                                        src="/static/img/categories/images/icons/cash.png"
+                                        alt="Cash on Delivery"
+                                    />
+                                    <span>Cash on Delivery</span>
+                                </Radio>
                             </div>
-                            <div className="col-sm-6">
-                                <h5>CVC</h5>
-                                <Form.Item name="cvc">
-                                    <Input placeholder="CVC" />
-                                </Form.Item>
+                            <div className="payment-option">
+                                <Radio value="debitCreditCard">
+                                    <img
+                                        src="/static/img/categories/images/icons/card.png"
+                                        alt="Debit/Credit Card"
+                                    />
+                                    <span>Debit/Credit Card</span>
+                                </Radio>
                             </div>
-                        </div>
-                    </>
-                )}
+                        </Radio.Group>
+                    </div>
+
+                    {paymentMethod === 'debitCreditCard' && (
+                        <>
+                            <h5>Name on Card</h5>
+                            <Form.Item name="nameOnCard">
+                                <Input placeholder="Name on Card" />
+                            </Form.Item>
+                            <h5>Card Number</h5>
+                            <Form.Item name="cardNumber">
+                                <Input placeholder="Card Number" />
+                            </Form.Item>
+                            <div className="row">
+                                <div className="col-sm-6">
+                                    <h5>Expire Date</h5>
+                                    <Form.Item name="expiryDate">
+                                        <Input placeholder="Expire Date (MM/YY)" />
+                                    </Form.Item>
+                                </div>
+                                <div className="col-sm-6">
+                                    <h5>CVC</h5>
+                                    <Form.Item name="cvc">
+                                        <Input placeholder="CVC" />
+                                    </Form.Item>
+                                </div>
+                            </div>
+                        </>
+                    )}
+                </div>
 
                 <h3 className="ps-form__heading">Additional Information</h3>
-                <h5>Order Notes (Optional)</h5>
+                <h5>
+                    Order Notes <span>(Optional)</span>
+                </h5>
+
                 <Form.Item name="orderNotes">
                     <Input.TextArea placeholder="Notes about your order, e.g. special notes for delivery" />
                 </Form.Item>

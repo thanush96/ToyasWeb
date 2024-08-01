@@ -380,7 +380,6 @@
             max-width: 25%;
             padding: 0;
             border-right: none;
-
         }
     }
 
@@ -3325,7 +3324,7 @@
         margin-bottom: 25px;
         padding-bottom: 25px;
         border-bottom: 1px solid #eaeaea;
-        
+
         figcaption {
             display: flex;
             justify-content: space-between;
@@ -3394,9 +3393,10 @@
     .ps-block__content {
         padding: 30px 20px;
         margin-bottom: 10px;
-        border-radius: 4px;
+        border-radius: 5px;
         background-color: #fff;
-     }
+        border: 2px solid #f1f1f1;
+    }
 
     .ps-block__payment-methods {
         .ps-radio {
@@ -3581,5 +3581,3 @@
         }
     }
 }
-
-
