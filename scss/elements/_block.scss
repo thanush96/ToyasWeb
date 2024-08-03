@@ -418,6 +418,12 @@
     }
 }
 
+@media (max-width: 768px) {
+    .ps-block--site-features {
+        display: none;
+    }
+}
+
 .ps-block--countdown-deal {
     display: flex;
     flex-flow: row nowrap;

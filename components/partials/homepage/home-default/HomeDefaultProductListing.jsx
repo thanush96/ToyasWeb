@@ -13,8 +13,11 @@ const mockProducts = [
         price: '$2300',
         status: 'sold-out',
         discount: null,
-        featre: true,
+        feature: true,
         image: '/static/img/categories/images/d1.png',
+        description:
+            'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate',
+        old_price: '$1,200',
     },
     {
         id: 2,
@@ -86,11 +89,32 @@ const mockProducts = [
             'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate',
         old_price: '$1,200',
     },
-
 ];
 
 const HomeDefaultProductListing = ({ collectionSlug, title }) => {
     const [loading, setLoading] = useState(true);
+    const [products, setProducts] = useState(mockProducts);
+
+
+    useEffect(() => {
+        const updateProductsForScreenSize = () => {
+            const isMobile = window.innerWidth <= 768;
+            const updatedProducts = [...mockProducts];
+            if (isMobile) {
+                updatedProducts[0].feature = true;
+                updatedProducts[updatedProducts.length - 1].feature = false;
+            } else {
+                updatedProducts[0].feature = false;
+                updatedProducts[updatedProducts.length - 1].feature = true;
+            }
+            setProducts(updatedProducts);
+        };
+
+        updateProductsForScreenSize();
+        window.addEventListener('resize', updateProductsForScreenSize);
+
+        return () => window.removeEventListener('resize', updateProductsForScreenSize);
+    }, []);
 
     useEffect(() => {
         // Simulate a loading delay
@@ -105,10 +129,6 @@ const HomeDefaultProductListing = ({ collectionSlug, title }) => {
         productItemsView = mockProducts.map((item, index) => (
             <ProductDealOfDay product={item} key={item.id} index={index} />
         ));
-
-        // productItemsView = mockProducts.map((item) => (
-        //     <ProductDealOfDay product={item} key={item.id} />
-        // ));
     } else {
         const skeletons = generateTempArray(10).map((item) => (
             <div className="col-xl-2 col-lg-3 col-sm-3 col-6" key={item}>
@@ -132,9 +152,17 @@ const HomeDefaultProductListing = ({ collectionSlug, title }) => {
                         </Link>
                     </div>
                 </div>
-                <div className="grid-container">
-                    {/* <div className="ps-section__content"> */}
-                    {productItemsView}
+                <div className="grid-container">{productItemsView}</div>
+
+                <div className="ps-section__footer">
+                    <div className="shop-now">
+                        <Link href="/shop">
+                            <a className="shop-now-button">
+                                Shop Now &nbsp;{' '}
+                                <i class="fa-solid fa-arrow-right"></i>{' '}
+                            </a>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>
