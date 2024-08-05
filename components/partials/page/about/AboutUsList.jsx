@@ -12,35 +12,35 @@ const AboutUsList = () => {
             </div>
             <div className="listSection">
                 <div className="listItem">
-                    <img src="/static/img/categories/images/icon png/1.png" className="icon" alt="Quality Icon" />
+                    <img src="/static/img/categories/images/icons/1.png" className="icon" alt="Quality Icon" />
                     <div className="listContent">
                         <div>Quality</div>
                         <span>We uphold the highest standards in the toys and games we offer.</span>
                     </div>
                 </div>
                 <div className="listItem">
-                    <img src="/static/img/categories/images/icon png/2.png" className="icon" alt="Innovation Icon" />
+                    <img src="/static/img/categories/images/icons/2.png" className="icon" alt="Innovation Icon" />
                     <div className="listContent">
                         <div>Innovation</div>
                         <span>We seek out the latest trends and innovations to delight our customers.</span>
                     </div>
                 </div>
                 <div className="listItem">
-                    <img src="/static/img/categories/images/icon png/3.png" className="icon" alt="Customer Satisfaction Icon" />
+                    <img src="/static/img/categories/images/icons/3.png" className="icon" alt="Customer Satisfaction Icon" />
                     <div className="listContent">
                         <div>Customer Satisfaction</div>
                         <span>We prioritize customer satisfaction and strive to exceed expectations in every interaction.</span>
                     </div>
                 </div>
                 <div className="listItem">
-                    <img src="/static/img/categories/images/icon png/4.png" className="icon" alt="Creativity Icon" />
+                    <img src="/static/img/categories/images/icons/4.png" className="icon" alt="Creativity Icon" />
                     <div className="listContent">
                         <div>Creativity</div>
                         <span>We celebrate the diverse imaginations of children and inspire creativity through our products.</span>
                     </div>
                 </div>
                 <div className="listItem">
-                    <img src="/static/img/categories/images/icon png/5.png" className="icon" alt="Community Icon" />
+                    <img src="/static/img/categories/images/icons/5.png" className="icon" alt="Community Icon" />
                     <div className="listContent">
                         <div>Community</div>
                         <span>We are committed to building a supportive and inclusive community of families who share our passion for play.</span>

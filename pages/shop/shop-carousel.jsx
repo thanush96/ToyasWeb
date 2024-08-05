@@ -18,7 +18,7 @@ const ShopCategoriesPage = () => {
         },
     ];
     return (
-        <PageContainer footer={<FooterDefault />} title="Shop Carousel">
+        <PageContainer   title="Shop Carousel">
             <BreadCrumb breacrumb={breadCrumb} layout="fullwidth" />
             <div className="ps-page--shop" id="shop-carousel">
                 <div className="container">

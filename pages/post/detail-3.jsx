@@ -22,7 +22,7 @@ const BlogLeftSidebarScreen = () => {
     return (
         <>
             <PageContainer
-                footer={<FooterDefault />}
+                 
                 title="Post Detail 3"
                 boxed={true}>
                 <div className="ps-page--blog">

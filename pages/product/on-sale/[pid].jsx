@@ -60,7 +60,7 @@ const ProductDefaultPage = () => {
     }
     return (
         <PageContainer
-            footer={<FooterDefault />}
+             
             title={product ? product.title : 'Loading...'}>
             <BreadCrumb breacrumb={breadCrumb} layout="fullwidth" />
             <div className="ps-page--product">

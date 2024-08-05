@@ -16,7 +16,7 @@ const BlogGridPage = () => {
         },
     ];
     return (
-        <PageContainer footer={<FooterDefault />} title="Blog ">
+        <PageContainer   title="Blog ">
             <div className="ps-page--blog">
                 <div className="container">
                     <div className="ps-page__header">

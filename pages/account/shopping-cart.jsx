@@ -94,7 +94,8 @@ const ShoppingCartScreen = ({ ecomerce }) => {
 
     return (
         <>
-            <PageContainer footer={<FooterDefault />} title="Shopping Cart">
+            {/* <PageContainer   title="Shopping Cart"> */}
+            <PageContainer title="Shopping Cart">
                 <div className="ps-page--simple">
                     <BreadCrumb breacrumb={breadCrumb} />
                     <div className="ps-section--shopping ps-shopping-cart">

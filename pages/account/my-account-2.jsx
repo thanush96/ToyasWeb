@@ -18,7 +18,7 @@ const MyAccountTwo = () => {
     ];
     return (
         <>
-            <PageContainer footer={<FooterDefault />} title="My Account">
+            <PageContainer title="My Account">
                 <div className="ps-page--my-account">
                     <BreadCrumb breacrumb={breadCrumb} />
                     <MyAccount2 />

@@ -88,6 +88,16 @@
                 margin-right: 0;
             }
         }
+
+        @include media('<sm') {
+            .header__extra {
+                display: none;
+
+                &:first-child {
+                    display: block;
+                }
+            }
+        }
     }
     .header__actions {
         display: block;

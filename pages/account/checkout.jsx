@@ -22,7 +22,7 @@ const CheckoutPage = () => {
     ];
 
     return (
-        <PageContainer footer={<FooterDefault />} title="Checkout">
+        <PageContainer   title="Checkout">
             <div className="ps-page--simple">
                 <BreadCrumb breacrumb={breadCrumb} />
                 <Checkout />

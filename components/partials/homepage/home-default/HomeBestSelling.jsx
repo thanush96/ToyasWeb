@@ -9,12 +9,15 @@ import '@fortawesome/fontawesome-free/css/all.css';
 const mockProducts = [
     {
         id: 1,
-        title: 'In publishing and graphic design, Lorem ipsum is ',
+        title: 'In publishing ',
         price: '$2300',
         status: 'sold-out',
         discount: null,
-        featre: true,
+        feature: true,
         image: '/static/img/categories/images/d1.png',
+        description:
+            'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate',
+        old_price: '$1,200',
     },
     {
         id: 2,
@@ -81,12 +84,11 @@ const mockProducts = [
         status: 'HOT',
         discount: '15% OFF',
         image: '/static/img/categories/images/d2.png',
-        feature: true,
+        feature: false,
         description:
             'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate',
         old_price: '$1,200',
     },
-
 ];
 
 const HomeBestSellingProductListing = ({ collectionSlug, title }) => {
@@ -135,6 +137,17 @@ const HomeBestSellingProductListing = ({ collectionSlug, title }) => {
                 <div className="grid-container__bast_selling">
                     {/* <div className="ps-section__content"> */}
                     {productItemsView}
+                </div>
+
+                <div className="ps-section__footer">
+                    <div className="shop-now">
+                        <Link href="/shop">
+                            <a className="shop-now-button">
+                                Shop Now &nbsp;{' '}
+                                <i class="fa-solid fa-arrow-right"></i>{' '}
+                            </a>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>

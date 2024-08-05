@@ -8,7 +8,7 @@ import PageContainer from '~/components/layouts/PageContainer';
 
 const PostDetailScreen = () => {
     return (
-        <PageContainer footer={<FooterDefault />} title="Post Detail">
+        <PageContainer   title="Post Detail">
             <PostDetailBackground />
             <div className="container">
                 <RelatedPosts />

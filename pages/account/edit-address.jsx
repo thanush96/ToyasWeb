@@ -18,7 +18,7 @@ const EditAddressPage = () => {
     ];
     return (
         <>
-            <PageContainer footer={<FooterDefault />} title="Edit Address">
+            <PageContainer   title="Edit Address">
                 <div className="ps-page--my-account">
                     <BreadCrumb breacrumb={breadCrumb} />
                     <EditAddress />

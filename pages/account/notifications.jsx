@@ -17,7 +17,7 @@ const AccountNotificationsPage = () => {
     ];
     return (
         <>
-            <PageContainer footer={<FooterDefault />} title="Notifications">
+            <PageContainer title="Notifications">
                 <div className="ps-page--my-account">
                     <BreadCrumb breacrumb={breadCrumb} />
                     <Notifications />

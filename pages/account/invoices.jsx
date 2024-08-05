@@ -18,7 +18,7 @@ const InvoicePage = () => {
     ];
     return (
         <>
-            <PageContainer footer={<FooterDefault />} title="Invoices">
+            <PageContainer   title="Invoices">
                 <div className="ps-page--my-account">
                     <BreadCrumb breacrumb={breadCrumb} />
                     <Invoices />

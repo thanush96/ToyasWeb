@@ -16,7 +16,7 @@ const ComparePage = () => {
         },
     ];
     return (
-        <PageContainer footer={<FooterDefault />} title="Compare">
+        <PageContainer   title="Compare">
             <div className="ps-page--simple">
                 <BreadCrumb breacrumb={breadCrumb} />
                 <Compare />

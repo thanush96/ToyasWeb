@@ -70,7 +70,7 @@ const ProductByBrandScreen = () => {
 
     return (
         <PageContainer
-            footer={<FooterDefault />}
+             
             title={brand ? brand.name : 'Brand'}>
             <div className="ps-page--shop">
                 <BreadCrumb breacrumb={breadCrumb} />

@@ -143,6 +143,7 @@
         display: none;
         &.header--mobile {
             display: block;
+            background-color: white;
         }
     }
 }
@@ -578,11 +579,19 @@
         }
 
         .ps-search--mobile {
-            display: block;
+            display: none;
         }
 
         .navigation--mobile {
             padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        img {
+            height: 40px;
         }
     }
 
