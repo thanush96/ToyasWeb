@@ -49,16 +49,16 @@ const mockProducts = [
         discount: null,
         image: '/static/img/categories/images/d4.png',
     },
-    {
-        id: 5,
-        title: 'In publishing and graphic design, Lorem ipsum is ',
-        price: '$800',
-        old_price: '$1,200',
-        status: 'HOT',
-        rating: true,
-        discount: '32% OFF',
-        image: '/static/img/categories/images/d5.png',
-    },
+    // {
+    //     id: 5,
+    //     title: 'In publishing and graphic design, Lorem ipsum is ',
+    //     price: '$800',
+    //     old_price: '$1,200',
+    //     status: 'HOT',
+    //     rating: true,
+    //     discount: '32% OFF',
+    //     image: '/static/img/categories/images/d5.png',
+    // },
 ];
 
 const featuredList = ({ collectionSlug, title }) => {

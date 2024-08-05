@@ -46,6 +46,22 @@ const HomeDefaultBanner = () => {
                         }}
                     />
                 </Link>
+
+                {/* <div className="banner-overlay">
+                    <div className="banner-overlay-content">
+                        <div className="banner-text">
+                            - THE BEST PLACE OF PLAY
+                        </div>
+                        <h1>Banner Heading</h1>
+                        <p className="banner-description">
+                            This is the banner description text.
+                        </p>
+                        <a className="ps-btn ps-btn--black" href="#">
+                            SHOP NOW &nbsp;
+                            <i className="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div> */}
             </div>
         ));
         mainCarouselView = (
@@ -54,6 +70,7 @@ const HomeDefaultBanner = () => {
             </Slider>
         );
     }
+
     return (
         <div className="ps-home-banner ps-home-banner--1">
             <div className="ps-container">

@@ -8,7 +8,7 @@ import {
     setWishlistTtems,
 } from '~/store/ecomerce/action';
 import PageLoader from '~/components/elements/common/PageLoader';
-import NavigationList from '~/components/shared/navigation/NavigationList';
+// import NavigationList from '~/components/shared/navigation/NavigationList';
 
 const MasterLayout = ({ children }) => {
     const dispatch = useDispatch();
@@ -36,7 +36,7 @@ const MasterLayout = ({ children }) => {
         <>
             {children}
             <PageLoader />
-            <NavigationList />
+            {/* <NavigationList /> */}
             <BackTop>
                 <button className="ps-btn--backtop">
                     <i className="icon-arrow-up" />
