@@ -2,8 +2,8 @@
     "name": "martfury_react",
     "version": "2.2.1",
     "private": true,
-    "author": "nouthemes",
-    "homepage": "https://themeforest.net/user/nouthemes",
+    "author": "dhanush",
+    "homepage": "",
     "scripts": {
         "dev": "next dev",
         "build": "next build",
