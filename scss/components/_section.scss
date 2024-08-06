@@ -2581,23 +2581,33 @@
 }
 
 .product-details {
-    // text-align: center;
-    padding: 10px 0;
-    // word-wrap: break-word
+    margin-top: 10px;
+
+    .product-title {
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 
     .price {
         display: flex;
-
-        .old {
-            color: gray;
-        }
-
-        .new {
-            color: #000 !important;
-        }
+        justify-content: flex-start; 
+        text-align: left;
+        align-items: center; 
     }
+    
+    .old {
+        margin-right: 5px;
+        color: #999;
+    }
+    
+    .new {
+        color: #000;
+        font-weight: bold;
+    }
+    
 }
-
 // .product-title {
 //     margin: 10px 0;
 //     font-size: 14px;
@@ -3683,16 +3693,30 @@
 
 .grid-container__similar {
     display: grid;
-    grid-template-areas:
-        'one two three four five'
-        'six seven eight nine ten';
+    grid-gap: 10px;
+    padding: 10px;
+}
 
-    .product-item {
-        border-radius: 8px;
-        padding: 20px;
-        text-align: center;
+@media (min-width: 368px) {
+    .grid-container__similar {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
+
+@media (min-width: 1024px) {
+    .grid-container__similar {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.product-item {
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #c8c8c8;
+    box-sizing: border-box;
+}
+
 
 //PopularBrand.jsx styles
 .popularBrand {

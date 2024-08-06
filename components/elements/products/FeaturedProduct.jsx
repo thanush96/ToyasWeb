@@ -1,13 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-// import Link from 'next/link';
 import useProduct from '~/hooks/useProduct';
 import Rating from '../Rating';
 import Link from 'next/link';
-// import { StrapiProductPriceExpanded } from '~/utilities/product-helper';
-// import ModuleProductActions from '~/components/elements/products/modules/ModuleProductActions';
-// import ModuleProductProgressbar from '~/components/elements/products/modules/ModuleProductProgressbar';
 
 const FeaturedProduct = ({ product, index }) => {
     const { thumbnailImage, badge, title } = useProduct();
@@ -15,12 +11,12 @@ const FeaturedProduct = ({ product, index }) => {
     return (
         <Link href="/product/85">
             <div
-                className={`Product item${index + 1}`}
+                // className={`product-item item${index + 1}`}
                 style={{
                     border: '1px solid #c8c8c8',
                     margin: '10px',
-                    padding: '10px',
-                    borderRadius: '6px',
+                    padding: '2px',
+                    borderRadius: '2px',
                 }}>
                 <div className="product-thumbnail">
                     {product.status && (
@@ -59,8 +55,10 @@ const FeaturedProduct = ({ product, index }) => {
                 <div className="product-details">
                     {product.rating ? <Rating /> : null}
 
-                    <p style={{ maxWidth: '200px', wordWrap: 'break-word' }}>
-                        {product.title}
+                    <p>
+                        {product.title.length > 15
+                            ? `${product.title.substring(0, 15)}...`
+                            : product.title}
                     </p>
 
                     <div className="price">
