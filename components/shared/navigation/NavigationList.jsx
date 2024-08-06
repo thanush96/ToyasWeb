@@ -5,6 +5,7 @@ import PanelMenu from '../panel/PanelMenu';
 import PanelCartMobile from '../panel/PanelCartMobile';
 import PanelSearch from '../panel/PanelSearch';
 import PanelCategories from '../panel/PanelCategories';
+import Link from 'next/link';
 
 class NavigationList extends Component {
     constructor(props) {
@@ -159,6 +160,7 @@ class NavigationList extends Component {
                         <i className="icon-menu"></i>
                         <span> Menu</span>
                     </a>
+
                     <a
                         className={`navigation__item ${
                             categoriesDrawer === true ? 'active' : ''
