@@ -29,7 +29,7 @@ function App({ Component, pageProps }) {
     return (
         <>
             <Head>
-                <title>louvie  - React eCommerce Template</title>
+                <title>louvie  - louvie's Toys eCommerce</title>
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                 <meta
                     name="viewport"
@@ -44,7 +44,7 @@ function App({ Component, pageProps }) {
                 />
                 <meta
                     name="description"
-                    content="louvie  - React eCommerce Template"
+                    content="louvie  - louvie's Toys eCommerce"
                 />
             </Head>
             <CookiesProvider>
