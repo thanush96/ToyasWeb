@@ -29,21 +29,21 @@ class MartketPlace3Banner extends Component {
                             <div className="item">
                                 <Link href="/shop">
                                     <a>
-                                        <img src="/static/img/slider/home-5/1.jpg" alt="Martfury " />
+                                        <img src="/static/img/slider/home-5/1.jpg" alt="louvie " />
                                     </a>
                                 </Link>
                             </div>
                             <div className="item">
                                 <Link href="/shop">
                                     <a>
-                                        <img src="/static/img/slider/home-5/2.jpg" alt="Martfury " />
+                                        <img src="/static/img/slider/home-5/2.jpg" alt="louvie " />
                                     </a>
                                 </Link>
                             </div>
                             <div className="item">
                                 <Link href="/shop">
                                     <a>
-                                        <img src="/static/img/slider/home-5/3.jpg" alt="Martfury " />
+                                        <img src="/static/img/slider/home-5/3.jpg" alt="louvie " />
                                     </a>
                                 </Link>
                             </div>
@@ -51,34 +51,34 @@ class MartketPlace3Banner extends Component {
                         </Slider>
                         <Link href="/shop">
                             <a>
-                                <img src="/static/img/slider/home-5/promotion-6.jpg" alt="Martfury " />
+                                <img src="/static/img/slider/home-5/promotion-6.jpg" alt="louvie " />
                             </a>
                         </Link>
                     </div>
                     <div className="ps-section__right">
                         <Link href="/shop">
                             <a>
-                                <img src="/static/img/slider/home-5/promotion-1.jpg" alt="Martfury " />
+                                <img src="/static/img/slider/home-5/promotion-1.jpg" alt="louvie " />
                             </a>
                         </Link>
                         <Link href="/shop">
                             <a>
-                                <img src="/static/img/slider/home-5/promotion-2.jpg" alt="Martfury " />
+                                <img src="/static/img/slider/home-5/promotion-2.jpg" alt="louvie " />
                             </a>
                         </Link>
                         <Link href="/shop">
                             <a className="wide">
-                                <img src="/static/img/slider/home-5/promotion-3.jpg" alt="Martfury " />
+                                <img src="/static/img/slider/home-5/promotion-3.jpg" alt="louvie " />
                             </a>
                         </Link>
                         <Link href="/shop">
                             <a>
-                                <img src="/static/img/slider/home-5/promotion-4.jpg" alt="Martfury " />
+                                <img src="/static/img/slider/home-5/promotion-4.jpg" alt="louvie " />
                             </a>
                         </Link>
                         <Link href="/shop">
                             <a>
-                                <img src="/static/img/slider/home-5/promotion-5.jpg" alt="Martfury " />
+                                <img src="/static/img/slider/home-5/promotion-5.jpg" alt="louvie " />
                             </a>
                         </Link>
                     </div>

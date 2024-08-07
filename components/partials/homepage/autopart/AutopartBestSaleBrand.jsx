@@ -12,70 +12,70 @@ const TechnologyBestSaleBrands = () => (
                     <li>
                         <Link href="/shop">
                             <a>
-                                <img src="/static/img/brand/2-1.jpg" alt="Martfury " />
+                                <img src="/static/img/brand/2-1.jpg" alt="louvie " />
                             </a>
                         </Link>
                     </li>
                     <li>
                         <Link href="/shop">
                             <a>
-                                <img src="/static/img/brand/2-2.jpg" alt="Martfury " />
+                                <img src="/static/img/brand/2-2.jpg" alt="louvie " />
                             </a>
                         </Link>
                     </li>
                     <li>
                         <Link href="/shop">
                             <a>
-                                <img src="/static/img/brand/2-3.jpg" alt="Martfury " />
+                                <img src="/static/img/brand/2-3.jpg" alt="louvie " />
                             </a>
                         </Link>
                     </li>
                     <li>
                         <Link href="/shop">
                             <a>
-                                <img src="/static/img/brand/2-4.jpg" alt="Martfury " />
+                                <img src="/static/img/brand/2-4.jpg" alt="louvie " />
                             </a>
                         </Link>
                     </li>
                     <li>
                         <Link href="/shop">
                             <a>
-                                <img src="/static/img/brand/2-5.jpg" alt="Martfury " />
+                                <img src="/static/img/brand/2-5.jpg" alt="louvie " />
                             </a>
                         </Link>
                     </li>
                     <li>
                         <Link href="/shop">
                             <a>
-                                <img src="/static/img/brand/2-6.jpg" alt="Martfury " />
+                                <img src="/static/img/brand/2-6.jpg" alt="louvie " />
                             </a>
                         </Link>
                     </li>
                     <li>
                         <Link href="/shop">
                             <a>
-                                <img src="/static/img/brand/2-7.jpg" alt="Martfury " />
+                                <img src="/static/img/brand/2-7.jpg" alt="louvie " />
                             </a>
                         </Link>
                     </li>
                     <li>
                         <Link href="/shop">
                             <a>
-                                <img src="/static/img/brand/2-8.jpg" alt="Martfury " />
+                                <img src="/static/img/brand/2-8.jpg" alt="louvie " />
                             </a>
                         </Link>
                     </li>
                     <li>
                         <Link href="/shop">
                             <a>
-                                <img src="/static/img/brand/2-9.jpg" alt="Martfury " />
+                                <img src="/static/img/brand/2-9.jpg" alt="louvie " />
                             </a>
                         </Link>
                     </li>
                     <li>
                         <Link href="/shop">
                             <a>
-                                <img src="/static/img/brand/2-10.jpg" alt="Martfury " />
+                                <img src="/static/img/brand/2-10.jpg" alt="louvie " />
                             </a>
                         </Link>
                     </li>

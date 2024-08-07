@@ -50,7 +50,7 @@ const HeaderElectronic = () => {
             <div className="header__top">
                 <div className="container">
                     <div className="header__left">
-                        <p>Welcome to Martfury  Online Shopping Store ! 1</p>
+                        <p>Welcome to louvie  Online Shopping Store ! 1</p>
                     </div>
                     <div className="header__right">
                         <ul className="header__top-links">
@@ -81,7 +81,7 @@ const HeaderElectronic = () => {
                             <a className="ps-logo">
                                 <img
                                     src="/static/img/logo-electronic.png"
-                                    alt="Martfury "
+                                    alt="louvie "
                                 />
                             </a>
                         </Link>

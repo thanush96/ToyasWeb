@@ -5,7 +5,7 @@ const MarketPlace3Promotions = () => (
     <div className="ps-home-promotions">
         <Link href="/">
             <a>
-                <img src="/static/img/promotions/home-5/simple.jpg" alt="Martfury " />
+                <img src="/static/img/promotions/home-5/simple.jpg" alt="louvie " />
             </a>
         </Link>
     </div>

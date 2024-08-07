@@ -6,19 +6,19 @@ const FooterCopyright = () => (
         <p>
             <span>Payment For:</span>
             <a href="#">
-                <img src="/static/img/payment-method/1.jpg" alt="Martfury " />
+                <img src="/static/img/payment-method/1.jpg" alt="louvie " />
             </a>
             <a href="#">
-                <img src="/static/img/payment-method/2.jpg" alt="Martfury " />
+                <img src="/static/img/payment-method/2.jpg" alt="louvie " />
             </a>
             <a href="#">
-                <img src="/static/img/payment-method/3.jpg" alt="Martfury " />
+                <img src="/static/img/payment-method/3.jpg" alt="louvie " />
             </a>
             <a href="#">
-                <img src="/static/img/payment-method/4.jpg" alt="Martfury " />
+                <img src="/static/img/payment-method/4.jpg" alt="louvie " />
             </a>
             <a href="#">
-                <img src="/static/img/payment-method/5.jpg" alt="Martfury " />
+                <img src="/static/img/payment-method/5.jpg" alt="louvie " />
             </a>
         </p>
     </div>

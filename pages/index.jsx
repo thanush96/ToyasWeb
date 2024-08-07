@@ -32,7 +32,7 @@ const HomepageDefaultPage = () => {
                 <SiteFeatures />
                 <HomeDefaultTopCategories />
                 <HomeDefaultDealOfDay collectionSlug="deal-of-the-day" />
-                <HomeAdsColumns />
+                {/* <HomeAdsColumns /> */}
                 <HomeDefaultProductListing
                     collectionSlug="Dolls"
                     title="Dolls"
@@ -52,7 +52,7 @@ const HomepageDefaultPage = () => {
 
                 {/* <ToyStore /> */}
                 <ShopByAge />
-                <HomeAds />
+                {/* <HomeAds /> */}
                 <NewArrivals collectionSlug="new-arrivals-products" />
                 <PopularBrand />
                 {/* <Banner /> */}

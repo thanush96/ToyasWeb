@@ -18,7 +18,7 @@ class WhatsAppNumber extends Component {
         return (
             <div>
                 <a href="#" onClick={this.handleFeatureWillUpdate.bind(this)}>
-                    <img src="/static/img/icons/whatsapp.png" alt="Martfury " />
+                    <img src="/static/img/icons/whatsapp.png" alt="louvie " />
                     &nbsp; +123 4564564565
                 </a>
             </div>

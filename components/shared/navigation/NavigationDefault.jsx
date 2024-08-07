@@ -27,7 +27,7 @@ class NavigationDefault extends Component {
                     <div className="navigation__left">
                         <img
                             src="/static/img/icons/delivery-truck.png"
-                            alt="Martfury "
+                            alt="louvie "
                         /> 
                          &nbsp; Get free Shipping Order Over 200AED
                     </div>

@@ -96,13 +96,13 @@ class HeaderMobile extends Component {
                 <header className="header header--mobile">
                     <div className="header__top">
                         <div className="header__left">
-                            <p>Welcome to Martfury Online Shopping Store !</p>
+                            <p>Welcome to louvie Online Shopping Store !</p>
                         </div>
                         <div className="header__right">
                             <ul className="navigation__extra">
                                 <li>
                                     <Link href="/vendor/become-a-vendor">
-                                        <a>Sell on Martfury </a>
+                                        <a>Sell on louvie </a>
                                     </Link>
                                 </li>
                                 <li>
@@ -133,7 +133,7 @@ class HeaderMobile extends Component {
                                 <a className="ps-logo">
                                     <img
                                         src="/static/img/logo_light.png"
-                                        alt="Martfury "
+                                        alt="louvie "
                                     />
                                 </a>
                             </Link>

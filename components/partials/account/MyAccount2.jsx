@@ -124,7 +124,7 @@ class MyAccount extends Component {
                             <figure className="ps-section__desc">
                                 <figcaption>Sign up today and you will be able to:</figcaption>
                                 <p>
-                                    Martfury  Buyer Protection has you covered from click to
+                                    louvie  Buyer Protection has you covered from click to
                                     delivery. Sign up or sign in and you will be able to:
                                 </p>
                                 <ul className="ps-list">
@@ -147,8 +147,8 @@ class MyAccount extends Component {
                                 <aside>
                                     <h5>A small gift for your first purchase</h5>
                                     <p>
-                                        Martfury  give $25 as a small gift for your first purchase.
-                                        Welcome to Martfury !
+                                        louvie  give $25 as a small gift for your first purchase.
+                                        Welcome to louvie !
                                     </p>
                                 </aside>
                             </div>

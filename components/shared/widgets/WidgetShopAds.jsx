@@ -6,7 +6,7 @@ const WidgetShopAds = () => {
         <aside className="widget widget_ads">
             <Link href="/shop">
                 <a>
-                    <img src="/static/img/ads/product-ads.png" alt="Martfury " />
+                    <img src="/static/img/ads/product-ads.png" alt="louvie " />
                 </a>
             </Link>
         </aside>

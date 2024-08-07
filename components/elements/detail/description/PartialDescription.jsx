@@ -21,7 +21,7 @@ const PartialDescription = () => (
         <img
             className="mb-30"
             src="/static/img/products/description.jpg"
-            alt="Martfury "
+            alt="louvie "
         />
         <h5>What do you get</h5>
         <p>

@@ -25,7 +25,7 @@ const FooterWidgets = () => (
                 </li>
             </ul>
             <ul className="ps-list--social">
-                <li>
+                {/* <li>
                     <a className="facebook" href="#">
                         <i className="fa fa-facebook"></i>
                     </a>
@@ -44,7 +44,7 @@ const FooterWidgets = () => (
                     <a className="youtube" href="#">
                         <i className="fa fa-youtube"></i>
                     </a>
-                </li>
+                </li> */}
             </ul>
         </aside>
         <aside className="widget widget_footer">

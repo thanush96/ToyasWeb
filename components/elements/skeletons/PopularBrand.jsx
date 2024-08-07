@@ -18,7 +18,7 @@ const PopularBrand = () => {
         dots: true,
         infinite: true,
         speed: 750,
-        slidesToShow: 2, // Show 2 items at a time
+        slidesToShow: 6, // Show 2 items at a time
         slidesToScroll: 1,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,

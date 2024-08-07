@@ -29,7 +29,7 @@ function App({ Component, pageProps }) {
     return (
         <>
             <Head>
-                <title>Martfury  - React eCommerce Template</title>
+                <title>louvie  - React eCommerce Template</title>
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                 <meta
                     name="viewport"
@@ -40,11 +40,11 @@ function App({ Component, pageProps }) {
                 <meta name="author" content="nouthemes" />
                 <meta
                     name="keywords"
-                    content="Martfury , React, eCommerce, Template"
+                    content="louvie , React, eCommerce, Template"
                 />
                 <meta
                     name="description"
-                    content="Martfury  - React eCommerce Template"
+                    content="louvie  - React eCommerce Template"
                 />
             </Head>
             <CookiesProvider>

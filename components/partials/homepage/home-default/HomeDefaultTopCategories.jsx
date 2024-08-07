@@ -65,7 +65,7 @@ const HomeDefaultTopCategories = () => {
                             </Link>
                             <img
                                 src={category.img}
-                                alt="Martfury"
+                                alt="louvie"
                                 width={180}
                                 height={180}
                             />

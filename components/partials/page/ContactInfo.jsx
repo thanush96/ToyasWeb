@@ -13,8 +13,8 @@ const ContactInfo = () => (
                         <div className="ps-block--contact-info">
                             <h4>Contact Directly</h4>
                             <p>
-                                <a href="mailto:contact@Martfury .com">
-                                    contact@Martfury .com
+                                <a href="mailto:contact@louvie .com">
+                                    contact@louvie .com
                                 </a>
                                 <span>(+004) 912-3548-07</span>
                             </p>
@@ -36,7 +36,7 @@ const ContactInfo = () => (
                             <h4>Work With Us</h4>
                             <p>
                                 <span>Send your CV to our email:</span>
-                                <a href="#">career@Martfury .com</a>
+                                <a href="#">career@louvie .com</a>
                             </p>
                         </div>
                     </div>
@@ -44,7 +44,7 @@ const ContactInfo = () => (
                         <div className="ps-block--contact-info">
                             <h4>Customer Service</h4>
                             <p>
-                                <a href="#">customercare@Martfury .com</a>
+                                <a href="#">customercare@louvie .com</a>
                                 <span>(800) 843-2446</span>
                             </p>
                         </div>
@@ -53,7 +53,7 @@ const ContactInfo = () => (
                         <div className="ps-block--contact-info">
                             <h4>Media Relations</h4>
                             <p>
-                                <a href="#">media@Martfury .com</a>
+                                <a href="#">media@louvie .com</a>
                                 <span>(801) 947-3564</span>
                             </p>
                         </div>
@@ -62,7 +62,7 @@ const ContactInfo = () => (
                         <div className="ps-block--contact-info">
                             <h4>Vendor Support</h4>
                             <p>
-                                <a href="#">vendorsupport@Martfury .com</a>
+                                <a href="#">vendorsupport@louvie .com</a>
                                 <span>(801) 947-3100</span>
                             </p>
                         </div>
