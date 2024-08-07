@@ -3735,7 +3735,7 @@
     margin-bottom: 20px;
 
     @include media('<sm') {
-        font-size: 24px;
+        font-size: 36px;
     }
 }
 
@@ -3745,7 +3745,7 @@
     margin-bottom: 40px;
 
     @include media('<sm') {
-        font-size: 14px;
+        font-size: 18px;
         margin-bottom: 20px;
     }
 }
