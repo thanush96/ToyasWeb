@@ -60,9 +60,9 @@ const HomeDefaultTopCategories = () => {
                 <Slider {...carouselSettings} className="ps-carousel">
                     {categories.map((category) => (
                         <div className="ps-block--category">
-                            {/* <Link href="/shop">
+                            <Link href="/shop">
                                 <a className="ps-block__overlay"></a>
-                            </Link> */}
+                            </Link>
                             <img
                                 src={category.img}
                                 alt="Martfury"

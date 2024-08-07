@@ -15,6 +15,16 @@ const ModuleEcomerceCartItems = ({ ecomerce, cartItems }) => {
             productId: 10,
             quantity: 10,
         },
+
+        {
+            title: 'Lorem Ipsum Dolar',
+            featured: false,
+            sale: false,
+            price: 36.99,
+            sale_price: 0,
+            productId: 10,
+            quantity: 10,
+        },
     ];
 
     console.warn('cartItem', cartItem);

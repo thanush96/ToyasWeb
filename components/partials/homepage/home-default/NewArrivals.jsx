@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import Rating from '~/components/elements/Rating';
+import ProductDealOfDay from '~/components/elements/products/ProductDealOfDay';
+import FeaturedProduct from '~/components/elements/products/FeaturedProduct';
 
 const productData = [
     {
@@ -9,6 +11,8 @@ const productData = [
         price: '$70',
         status: 'hot',
         discount: null,
+        rating: true,
+
         image: '/static/img/categories/images/d1.png',
     },
     {
@@ -17,6 +21,8 @@ const productData = [
         price: '$2300',
         status: null,
         discount: null,
+        rating: true,
+
         image: '/static/img/categories/images/d2.png',
     },
     {
@@ -24,13 +30,16 @@ const productData = [
         title: 'Product 3',
         price: '$360',
         status: null,
-        // discount: '19% OFF',
+        rating: true,
+
         image: '/static/img/categories/images/d3.png',
     },
     {
         id: 4,
         title: 'Product 4',
         price: '$80',
+        rating: true,
+
         image: '/static/img/categories/images/d4.png',
     },
     {
@@ -39,33 +48,44 @@ const productData = [
         price: '$1200',
         status: null,
         discount: null,
+        rating: true,
+
         image: '/static/img/categories/images/d5.png',
     },
     {
         id: 6,
         title: 'Product 6',
         price: '$800',
+        rating: true,
+
         status: 'sale',
-        // discount: '25% OFF',
         image: '/static/img/categories/images/d6.png',
     },
     {
-        id: 4,
-        title: 'Product 4',
-        price: '$80',
-        image: '/static/img/categories/images/d4.png',
+        id: 7,
+        title: 'Product 7',
+        price: '$150',
+        status: 'hot',
+        rating: true,
+
+        image: '/static/img/categories/images/d7.png',
     },
     {
-        id: 5,
-        title: 'Product 5',
-        price: '$1200',
-        status: 'hot',
-        discount: null,
-        image: '/static/img/categories/images/d5.png',
+        id: 8,
+        title: 'Product 8',
+        price: '$250',
+        status: null,
+        rating: true,
+
+        image: '/static/img/categories/images/d8.png',
     },
 ];
 
 const NewArrivals = () => {
+    // Determine how many items to display based on screen width
+    const isMobile = typeof window !== 'undefined' && window.innerWidth <= 768;
+    const displayedItems = isMobile ? productData.slice(0, 3) : productData;
+
     return (
         <div className="ps-product-list ps-new-arrivals">
             <div className="ps-container">
@@ -83,7 +103,6 @@ const NewArrivals = () => {
                                     SHOP NOW
                                 </button>
                             </div>
-
                             <img
                                 src={'/static/img/categories/images/d3.png'}
                                 alt=""
@@ -129,38 +148,14 @@ const NewArrivals = () => {
                         </div>
                         <div className="ps-section__content">
                             <div className="row">
-                                {productData.map((item) => (
-                                    <div
-                                        className="product-item col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12"
-                                        key={item.id}>
-                                        <div className="product-image">
-                                            <img
-                                                src={item.image}
-                                                alt={item.title}
-                                            />
-                                            {item.status && (
-                                                <span
-                                                    className={`status ${item.status}`}>
-                                                    {item.status}
-                                                </span>
-                                            )}
-                                            {item.discount && (
-                                                <span className="discount">
-                                                    {item.discount}
-                                                </span>
-                                            )}
-
-                                            <div className="product-info">
-                                                <Rating /> (100)
-                                                <p className="product-title">
-                                                    {item.title}
-                                                </p>
-                                                <p className="product-price">
-                                                    {item.price}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                {displayedItems.map((item) => (
+                                    <Link href="/product/85">
+                                        <FeaturedProduct
+                                            product={item}
+                                            key={item.id}
+                                            index={item.id}
+                                        />
+                                    </Link>
                                 ))}
                             </div>
                         </div>

@@ -38,7 +38,6 @@ const ProductListing = () => {
                 <div className="results-count-new">652 Results found.</div>
             </div>
             <FeaturedListGrid />
-            <FeaturedListGrid />
 
             <CustomPagination />
         </div>

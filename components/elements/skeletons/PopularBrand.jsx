@@ -1,5 +1,8 @@
 import React from 'react';
+import Slider from 'react-slick';
 import Image from 'next/image';
+import NextArrow from '~/components/elements/carousel/NextArrow'; // Adjust path as needed
+import PrevArrow from '~/components/elements/carousel/PrevArrow'; // Adjust path as needed
 
 const brands = [
     { id: 1, src: '/static/img/brand/b1.png', alt: 'Kids Party' },
@@ -11,6 +14,45 @@ const brands = [
 ];
 
 const PopularBrand = () => {
+    const carouselSetting = {
+        dots: true,
+        infinite: true,
+        speed: 750,
+        slidesToShow: 2, // Show 2 items at a time
+        slidesToScroll: 1,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
+        responsive: [
+            {
+                breakpoint: 1024, // Desktop screens
+                settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 0,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 768, // Tablet screens
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 480, // Mobile screens
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: true
+                }
+            }
+        ]
+    };
+
     return (
         <div className="popularBrand">
             <h2>Popular Brand</h2>
@@ -18,7 +60,7 @@ const PopularBrand = () => {
                 Lorem ipsum dolor sit amet consectetur. Id fames there are many
                 vulputate eget dolor.
             </p>
-            <div className="brandGrid">
+            <Slider {...carouselSetting} className="brandSlider">
                 {brands.map((brand) => (
                     <div key={brand.id} className="brandItem">
                         <Image
@@ -29,9 +71,12 @@ const PopularBrand = () => {
                         />
                     </div>
                 ))}
-            </div>
+            </Slider>
         </div>
     );
 };
 
 export default PopularBrand;
+
+
+

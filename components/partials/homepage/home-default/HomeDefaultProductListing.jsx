@@ -13,7 +13,6 @@ const mockProducts = [
         price: '$2300',
         status: 'sold-out',
         discount: null,
-        feature: true,
         image: '/static/img/categories/images/d1.png',
         description:
             'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate',
@@ -84,7 +83,6 @@ const mockProducts = [
         status: 'HOT',
         discount: '15% OFF',
         image: '/static/img/categories/images/d9.png',
-        feature: true,
         description:
             'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate',
         old_price: '$1,200',
@@ -101,9 +99,13 @@ const HomeDefaultProductListing = ({ collectionSlug, title }) => {
             const isMobile = window.innerWidth <= 768;
             const updatedProducts = [...mockProducts];
             if (isMobile) {
+                console.warn('mob');
+                
                 updatedProducts[0].feature = true;
                 updatedProducts[updatedProducts.length - 1].feature = false;
             } else {
+                console.warn('lap');
+
                 updatedProducts[0].feature = false;
                 updatedProducts[updatedProducts.length - 1].feature = true;
             }

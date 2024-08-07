@@ -34,23 +34,25 @@ const ShoppingCartScreen = ({ ecomerce }) => {
     let contentView;
     // if (products) {
     //     if (products.length > 0) {
-            contentView = (
-                <>
-                    <div className="ps-section__content">
-                    <h5>Shopping Cart</h5>
+    contentView = (
+        <>
+            <div className="ps-section__content">
+                <h5>Shopping Cart</h5>
                 <ModuleEcomerceCartItems cartItems={products} />
                 <div className="ps-section__cart-actions">
                     <Link href="/shop">
-                    
-                      <a className="ps-btn">
-            <i className="fa-solid fa-arrow-left"></i> RETURN TO SHOP
-        </a>
+                        <a className="ps-btn">
+                            <i className="fa-solid fa-arrow-left"></i> RETURN TO
+                            SHOP
+                        </a>
                     </Link>
                     <button className="update-btn">UPDATE CART</button>
                 </div>
             </div>
+            
+
             <div className="ps-section__footer">
-            <div className="row">
+                <div className="row">
                 <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                     <div className="coupon-section">
                         <h3>Coupon Code</h3>
@@ -62,8 +64,9 @@ const ShoppingCartScreen = ({ ecomerce }) => {
                         <button className="apply-btn">APPLY COUPON</button>
                     </div>
                 </div>
-                    <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                        <ModulePaymentOrderSummary/>
+                
+                <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                        <ModulePaymentOrderSummary />
                     </div>
                 </div>
             </div>
@@ -100,8 +103,7 @@ const ShoppingCartScreen = ({ ecomerce }) => {
                     <BreadCrumb breacrumb={breadCrumb} />
                     <div className="ps-section--shopping ps-shopping-cart">
                         <div className="container">
-                            <div className="ps-section__header">
-                            </div>
+                            <div className="ps-section__header"></div>
                             {contentView}
                         </div>
                     </div>

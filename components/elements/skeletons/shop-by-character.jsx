@@ -65,8 +65,6 @@ const categories = [
     { id: 10, img: '/static/img/categories/2.png', label: 'Educational Toy' },
     { id: 11, img: '/static/img/categories/3.png', label: 'Puzzle' },
     { id: 12, img: '/static/img/categories/4.png', label: 'Indoor Play' },
-
-    
 ];
 
 const HomeDefaultTopCategories = () => {
@@ -116,23 +114,25 @@ const HomeDefaultTopCategories = () => {
 
                 <Slider {...carouselSettings} className="ps-carousel">
                     {categories.map((character) => (
-                        <div className="character-grid-wrapper">
-                            <div className="character-grid">
-                                <div
-                                    className="character-card-wrapper"
-                                    key={character.id}>
-                                    <div className={`character-card`}>
-                                        <img
-                                            src={character.img}
-                                            alt={character.name}
-                                        />
+                        <Link href="/shop">
+                            <div className="character-grid-wrapper">
+                                <div className="character-grid">
+                                    <div
+                                        className="character-card-wrapper"
+                                        key={character.id}>
+                                        <div className={`character-card`}>
+                                            <img
+                                                src={character.img}
+                                                alt={character.name}
+                                            />
+                                        </div>
+                                        <p className="character-name">
+                                            {character.name}
+                                        </p>
                                     </div>
-                                    <p className="character-name">
-                                        {character.name}
-                                    </p>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </Slider>
             </div>

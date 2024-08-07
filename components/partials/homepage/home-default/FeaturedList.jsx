@@ -16,7 +16,7 @@ const mockProducts = [
         price: '$2300',
         status: 'sold-out',
         discount: null,
-        featre: true,
+        feature: true,
         rating: true,
         image: '/static/img/categories/images/d1.png',
     },
