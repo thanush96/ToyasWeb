@@ -460,6 +460,10 @@
         background-color: #f4f5f5;
         padding: 15px 30px;
 
+        @include media('<lg') {
+            font-size: 15px;
+        }
+
         > * {
             width: 100%;
         }

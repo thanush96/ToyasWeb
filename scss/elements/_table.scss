@@ -403,9 +403,11 @@
                     padding: 16px;
                     text-transform: capitalize;
                     border-top: 1px solid #eaeaea;
+                    justify-items: start;
+                    align-items: center;
 
                     &:before {
-                        content: attr(data-label) ":";
+                        content: attr(data-label) ':';
                         font-weight: 600;
                         color: $color-heading;
                         font-size: 14px;

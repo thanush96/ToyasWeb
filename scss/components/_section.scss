@@ -120,7 +120,7 @@
 }
 
 .ps-section--shopping {
-    padding: 100px 0;
+    padding: 50px 0;
 
     .ps-section__header {
         text-align: center;
@@ -308,7 +308,6 @@
         }
     }
     @include media('<md') {
-        
         .ps-section__content {
             .col-12 {
                 max-width: 50%;
@@ -4019,6 +4018,11 @@
             height: 80px;
             margin-right: 20px;
 
+            @include media('<md') {
+                width: 60px;
+                height: 60px;
+            }
+
             img {
                 border-radius: 50%;
             }
@@ -4026,6 +4030,10 @@
 
         .newsletter-text {
             margin-right: auto;
+
+            @include media('<sm') {
+                display: none;
+            }
 
             h3 {
                 font-size: 30px;
@@ -4053,6 +4061,11 @@
                     flex-grow: 1;
                     font-size: 16px;
                     color: #333;
+
+                    @include media('>md') {
+                        padding: 4px 12px;
+                        font-size: 14px;
+                    }
                 }
 
                 button.ps-btn {
@@ -4068,6 +4081,11 @@
 
                     &:hover {
                         background-color: #ff9900;
+                    }
+
+                    @include media('>md') {
+                        padding: 9px 18px;
+                        font-size: 14px;
                     }
                 }
             }
