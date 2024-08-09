@@ -269,6 +269,13 @@
     }
 }
 
+.ps-block__left img {
+    width: 40px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure image does not exceed container width */
+    display: block; /* Ensure proper spacing */
+}
+
 .ps-block--site-features {
     display: flex;
     flex-flow: row nowrap;

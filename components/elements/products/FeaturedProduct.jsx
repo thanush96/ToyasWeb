@@ -41,15 +41,15 @@ const FeaturedProduct = ({ product, index }) => {
                     />
 
                     <div className="product-hover-icons">
-                        <button className="hover-icon">
-                            <i className="fas fa-shopping-cart"></i>
-                        </button>
-                        <button className="hover-icon">
-                            <i className="fas fa-list-alt"></i>
-                        </button>
-                        <button className="hover-icon">
-                            <i className="fas fa-eye"></i>
-                        </button>
+                    <button className="hover-icon1">
+                        <img src="/static/img/icons/love.png" alt="Wishlist" />
+                    </button>
+                    <button className="hover-icon2">
+                        <img src="/static/img/icons/shopping.png" alt="Shopping Cart" style={{ width: '24px', height: '24px' }} />
+                    </button>
+                    <button className="hover-icon2">
+                        <img src="/static/img/icons/open-eye.png" alt="eyes" style={{ width: '24px', height: '24px' }} />
+                    </button>
                     </div>
                 </div>
                 <div className="product-details">

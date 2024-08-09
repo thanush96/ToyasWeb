@@ -55,11 +55,11 @@ const PopularBrand = () => {
 
     return (
         <div className="popularBrand">
-            <h2>Popular Brand</h2>
+            <h1>Popular Brand</h1>
             <p>
-                Lorem ipsum dolor sit amet consectetur. Id fames there are many
-                vulputate eget dolor.
-            </p>
+                        Lorem ipsum dolor sit amet consectetur. Id fames there<br></br>
+                        <span>are many vulputate eget dolor.</span>
+             </p>
             <Slider {...carouselSetting} className="brandSlider">
                 {brands.map((brand) => (
                     <div key={brand.id} className="brandItem">

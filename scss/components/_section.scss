@@ -2688,6 +2688,54 @@
     color: #ff4d4f;
 }
 
+// icons hover styles shoping and wishlist , eye
+
+.hover-icon1 {
+    border: none; /* Remove default border */
+    background: transparent; /* Remove default background */
+    border-radius: 50%; /* Make the button round */
+    padding: 8px; /* Add some padding for better appearance */
+    transition: background 0.3s ease; /* Smooth transition for background color */
+    display: flex; /* Center image */
+    justify-content: center; /* Center image */
+    align-items: center; /* Center image */
+}
+
+/* Hover effect */
+.hover-icon1:hover {
+    background: yellow; /* Change background color on hover */
+}
+
+/* Optional: style for the image */
+.hover-icon1 img {
+    width: 24px;
+    height: 24px;
+}
+
+.hover-icon2 {
+    border: none; /* Remove default border */
+    background: transparent; /* Remove default background */
+    border-radius: 100%; /* Make the button round */
+    padding: 12px; /* Add some padding for better appearance */
+    transition: background 0.3s ease; /* Smooth transition for background color */
+    display: flex; /* Center image */
+    justify-content: center; /* Center image */
+    align-items: center; /* Center image */
+}
+
+/* Hover effect */
+.hover-icon2:hover {
+    background: white; /* Change background color on hover */
+}
+
+/* Optional: style for the image */
+.hover-icon2 img {
+    width: 34px;
+    height: 34px;
+}
+
+
+
 /* shop-by-character styles */
 .shop-by-character {
     padding: 70px 0;
@@ -2793,6 +2841,41 @@
 .nav-button:hover:before {
     color: white;
 }
+
+/* Section header styling */
+.section-header {
+    text-align: center; /* Center-aligns the text */
+    margin-bottom: 30px; /* Space below the section header */
+}
+
+/* Heading styling */
+.section-header h1 {
+    font-size: 4rem; /* Adjust font size for the heading */
+    color: #333; /* Dark grey color for the heading */
+    font-weight: bold; /* Make the heading bold */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+/* Paragraph styling */
+.section-header p {
+    font-size: 2.0rem; /* Font size for the paragraph */
+    color: #666; /* Light grey color for the paragraph text */
+    max-width: 800px; /* Maximum width of the paragraph for readability */
+    margin: 0 auto; /* Center-aligns the paragraph within its container */
+    line-height: 1.5; /* Adds spacing between lines for better readability */
+}
+
+
+p {
+    text-align: center; /* Center-aligns the entire paragraph */
+}
+
+.second-line {
+    display: block; /* Ensures the second line starts on a new line */
+    text-align: right; /* Aligns the text on the second line to the right */
+    margin-top: 10px; /* Adds space above the second line */
+    width: 70%; /* Makes the span take up the full width of the container */
+ }
 
 /* featuredProducts.css */
 .featuredProducts {
@@ -3371,8 +3454,7 @@
         .row {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-evenly;
-        }
+         }
 
         .discount-banner {
             padding: 20px;

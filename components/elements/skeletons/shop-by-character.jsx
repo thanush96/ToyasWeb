@@ -105,11 +105,12 @@ const HomeDefaultTopCategories = () => {
         <div className="shop-by-character">
             <div className="container">
                 <div className="section-header">
-                    <h2>Shop by Character</h2>
+                    <h1>Shop by Character</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur. Id fames there
-                        are many vulputate eget dolor.
+                        Lorem ipsum dolor sit amet consectetur. Id fames there<br></br>
+                        <span class="second-line">are many vulputate eget dolor.</span>
                     </p>
+
                 </div>
 
                 <Slider {...carouselSettings} className="ps-carousel">

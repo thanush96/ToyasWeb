@@ -1,12 +1,12 @@
 import React from 'react';
-
+ 
 const SiteFeatures = () => (
     <div className="ps-site-features">
         <div className="ps-container">
             <div className="ps-block--site-features">
                 <div className="ps-block__item">
                     <div className="ps-block__left">
-                        <i className="icon-rocket"></i>
+                        <img src="/static/img/icons/fast-Delivery.png" alt="Fast Delivery" />
                     </div>
                     <div className="ps-block__right">
                         <h4>FASTED DELIVERY</h4>
@@ -15,7 +15,7 @@ const SiteFeatures = () => (
                 </div>
                 <div className="ps-block__item">
                     <div className="ps-block__left">
-                        <i className="icon-sync"></i>
+                        <img src="/static/img/icons/24H RETURN.png" alt="24H Return" />
                     </div>
                     <div className="ps-block__right">
                         <h4>24H RETURN</h4>
@@ -24,7 +24,7 @@ const SiteFeatures = () => (
                 </div>
                 <div className="ps-block__item">
                     <div className="ps-block__left">
-                        <i className="icon-credit-card"></i>
+                        <img src="/static/img/icons/SECURE PAYMENT.png" alt="Secure Payment" />
                     </div>
                     <div className="ps-block__right">
                         <h4>SECURE PAYMENT</h4>
@@ -33,22 +33,13 @@ const SiteFeatures = () => (
                 </div>
                 <div className="ps-block__item">
                     <div className="ps-block__left">
-                        <i className="icon-bubbles"></i>
+                        <img src="/static/img/icons/247 Support.png" alt="24/7 Support" />
                     </div>
                     <div className="ps-block__right">
                         <h4>24/7 Support</h4>
                         <p>Live contact/message</p>
                     </div>
                 </div>
-                {/* <div className="ps-block__item">
-                    <div className="ps-block__left">
-                        <i className="icon-gift"></i>
-                    </div>
-                    <div className="ps-block__right">
-                        <h4>Gift Service</h4>
-                        <p>Support gift service</p>
-                    </div>
-                </div> */}
             </div>
         </div>
     </div>

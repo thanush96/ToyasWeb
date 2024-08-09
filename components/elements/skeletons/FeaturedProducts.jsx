@@ -8,7 +8,7 @@ const featuredProducts = [
         title: 'Lorem ipsum dolor sit amet  ipsum dolor sit',
         description:
             'Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetur adipiscing',
-        image: '/static/img/categories/images/d1.png',
+        image: '/static/img/categories/images/d14.png',
         status: 'New Coming',
         price: null,
     },
@@ -17,7 +17,7 @@ const featuredProducts = [
         title: 'Lorem ipsum dolor sit amet  ipsum dolor sit',
         description:
             'Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetur adipiscing',
-        image: '/static/img/categories/images/d2.png',
+        image: '/static/img/categories/images/d13.png',
         status: 'New Coming',
         price: '$590',
     },
