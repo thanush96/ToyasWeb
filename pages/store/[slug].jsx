@@ -23,7 +23,7 @@ const StoreDetailPage = () => {
         <PageContainer title="Store" boxed={true}>
             <BreadCrumb breacrumb={breadCrumb} />
             <StoreDetail />
-            <Newsletters layout="container" />
+            {/* <Newsletters layout="container" /> */}
         </PageContainer>
     );
 };

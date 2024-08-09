@@ -76,7 +76,7 @@ const ProductDefaulCountdown = () => {
                     <RelatedProduct collectionSlug="shop-recommend-items" />
                 </div>
             </div>
-            <Newsletters />
+            {/* <Newsletters /> */}
         </PageContainer>
     );
 };

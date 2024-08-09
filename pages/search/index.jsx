@@ -98,7 +98,7 @@ const SearchPage = () => {
                     </div>
                 </div>
             </div>
-            <Newsletters layout="container" />
+            {/* <Newsletters layout="container" /> */}
         </PageContainer>
     );
 };

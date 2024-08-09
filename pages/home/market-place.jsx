@@ -38,7 +38,7 @@ const HomeMarketPlacePage = () => {
                         <MarketHeathyAndBeauty categorySlug="health-and-beauty" />
                     </div>
                 </div>
-                <Newsletters />
+                {/* <Newsletters /> */}
             </main>
         </PageContainer>
     );
