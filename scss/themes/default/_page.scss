@@ -1,4 +1,8 @@
 #homepage-1 {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+
     .ps-home-banner {
         padding-top: 15px;
         margin-bottom: 30px;
@@ -108,31 +112,31 @@
             }
 
             .ps-section__left {
-                max-width: calc(100% - 1200px);
+                max-width: calc(100% - 976px);
                 padding-right: 15px;
             }
 
             .ps-section__right {
-                max-width: 1200px;
+                max-width: 976px;
             }
 
             @media (max-width: 1680px) {
                 .ps-section__left {
-                    max-width: calc(100% - 1200px);
+                    max-width: calc(100% - 800px);
                 }
 
                 .ps-section__right {
-                    max-width: 1200px;
+                    max-width: 900px;
                 }
             }
 
             @media (max-width: 1440px) {
                 .ps-section__left {
-                    max-width: calc(100% - 1090px);
+                    max-width: calc(100% - 875px);
                 }
 
                 .ps-section__right {
-                    max-width: 1090px;
+                    max-width: 875px;
                 }
             }
 

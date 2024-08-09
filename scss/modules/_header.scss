@@ -91,6 +91,10 @@
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
+            max-width: 1200px; /* Matches #homepage-1 max-width */
+            margin: 0 auto; /* Centers the container */
+            padding: 0 15px; /* Matches #homepage-1 padding */
+            box-sizing: border-box;
 
             > * {
                 width: 100%;

@@ -29,8 +29,8 @@ const PopularBrand = () => {
                     slidesToShow: 6,
                     slidesToScroll: 0,
                     infinite: true,
-                    dots: true
-                }
+                    dots: true,
+                },
             },
             {
                 breakpoint: 768, // Tablet screens
@@ -38,8 +38,8 @@ const PopularBrand = () => {
                     slidesToShow: 4,
                     slidesToScroll: 4,
                     infinite: true,
-                    dots: true
-                }
+                    dots: true,
+                },
             },
             {
                 breakpoint: 480, // Mobile screens
@@ -47,19 +47,19 @@ const PopularBrand = () => {
                     slidesToShow: 2,
                     slidesToScroll: 2,
                     infinite: true,
-                    dots: true
-                }
-            }
-        ]
+                    dots: true,
+                },
+            },
+        ],
     };
 
     return (
         <div className="popularBrand">
-            <h1>Popular Brand</h1>
-            <p>
-                        Lorem ipsum dolor sit amet consectetur. Id fames there<br></br>
-                        <span>are many vulputate eget dolor.</span>
-             </p>
+            <h2>Popular Brand</h2>
+            <p className='subtitle'>
+                Lorem ipsum dolor sit amet consectetur. Id fames there<br></br>
+                {/* are many vulputate eget dolor */}
+            </p>
             <Slider {...carouselSetting} className="brandSlider">
                 {brands.map((brand) => (
                     <div key={brand.id} className="brandItem">
@@ -77,6 +77,3 @@ const PopularBrand = () => {
 };
 
 export default PopularBrand;
-
-
-

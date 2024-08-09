@@ -37,11 +37,11 @@ const MasterLayout = ({ children }) => {
             {children}
             <PageLoader />
             {/* <NavigationList /> */}
-            <BackTop>
+            {/* <BackTop>
                 <button className="ps-btn--backtop">
                     <i className="icon-arrow-up" />
                 </button>
-            </BackTop>
+            </BackTop> */}
         </>
     );
 };

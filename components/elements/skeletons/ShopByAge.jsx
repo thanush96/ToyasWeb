@@ -62,10 +62,10 @@ const ShopByAge = () => {
         <div className="shop-by-age">
             <div className="container">
                 <div className="section-header">
-                    <h1>Shop by Age</h1>
-                    <p>
+                    <h2>Shop by Age</h2>
+                    <p className='subtitle'>
                         Lorem ipsum dolor sit amet consectetur. Id fames there<br></br>
-                        <span class="second-line">are many vulputate eget dolor.</span>
+                        {/* <span class="second-line">are many vulputate eget dolor.</span> */}
                     </p>
                 </div>
 

@@ -156,7 +156,7 @@ const HomeDefaultBanner = () => {
         <div className="ps-carousel">
              <div className="latestNews">
             <h2>Latest News</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Id fames there are many vulputate eget dolor.</p>
+            <p className='subtitle'>Lorem ipsum dolor sit amet consectetur. Id</p>
             <Slider {...carouselSetting}>
                 {news.map(item => (
                     <div key={item.id} className="newsItem">

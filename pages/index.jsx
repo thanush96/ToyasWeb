@@ -60,7 +60,7 @@ const HomepageDefaultPage = () => {
                 <FeaturedProductSingleTwo />
 
                 <LatestNews />
-                <Newletters />
+                {/* <Newletters /> */}
                 {/* <DownLoadApp /> */}
             </main>
         </PageContainer>
