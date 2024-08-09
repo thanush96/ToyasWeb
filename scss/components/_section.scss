@@ -1,18 +1,14 @@
 // ts debug temp
 
-.ps-newsletter{
+.ps-newsletter {
     display: none;
-
 }
 
-
-.ps-footer{
-    .ps-newsletter{
+.ps-footer {
+    .ps-newsletter {
         display: block;
-    
     }
 }
-
 
 .ps-section--default {
     margin-bottom: 80px;
@@ -2731,7 +2727,7 @@
 
 /* Hover effect */
 .hover-icon1:hover {
-background: $color-1st; /* Change background color on hover */
+    background: $color-1st; /* Change background color on hover */
 }
 
 /* Optional: style for the image */
@@ -2754,9 +2750,7 @@ background: $color-1st; /* Change background color on hover */
 /* Hover effect */
 .hover-icon2:hover {
     background: $color-1st; /* Change background color on hover */
-
 }
-
 
 /* Optional: style for the image */
 .hover-icon2 img {
@@ -4164,8 +4158,6 @@ background: $color-1st; /* Change background color on hover */
         max-width: 1250px;
         margin: 0 auto;
         padding: 0 15px;
-
-
 
         .newsletter-image {
             position: relative;
